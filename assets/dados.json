@@ -1,0 +1,3098 @@
+[
+    {
+        "palavra": "ABA",
+        "sinonimos": "falda, base, orla, sopé, vertente , encosta , flanco , ilharga , lado, ladeira , declive , aclive , rampa"
+    },
+    {
+        "palavra": "ABAS",
+        "sinonimos": "adjacências , contiguidades , cercanias, contornos , circunvizinhanças , imediações , proximidades , confins , bairros , distritos , comarcas , subúrbios , arrabaldes , arredores , redondeza"
+    },
+    {
+        "palavra": "ABAFAR",
+        "sinonimos": "atabafar , encobrir , ocultar , esconder , receptar , acoitar , sonegar , reter, subtrair , acobertar"
+    },
+    {
+        "palavra": "ABAFEIRA",
+        "sinonimos": "charco , pântano , lamaçal , brejo , atascadeiro , atoleiro , paul, banhado, tremedal , pantanal , lodaçal , lodeiro , enxurdeiro , lagoeiro , lameiro , lameirão , lameiral , lenteiro , chafurda , chafurdei-ro"
+    },
+    {
+        "palavra": "ABAIXAR",
+        "sinonimos": "abater , rebaixar , aviltar , degradar , humilhar , envergonhar , deprimir , desonrar , depreciar , envilecer , desdoirar , deslustrar , macular , manchar , desacreditar , desabonar , infamar , difamar"
+    },
+    {
+        "palavra": "ABALAR",
+        "sinonimos": "demover , dissuadir"
+    },
+    {
+        "palavra": "ABALIZADO",
+        "sinonimos": "assinalado , distinto , notável , ilustre , nobre , digno , famoso , afamado , famigerado , célebre , insigne , preclaro , conspícuo , eminente , egrégio , exímio , consumado , ínclito , grande"
+    },
+    {
+        "palavra": "ABALO",
+        "sinonimos": "tremor de terra , terremoto , trepidação , comoção , convulsão , estremecimento , agitação"
+    },
+    {
+        "palavra": "ABALROAR",
+        "sinonimos": "investir , atracar , aferrar , abordar , acometer , agredir , assaltar , arremeter , atacar"
+    },
+    {
+        "palavra": "ABANDONAR",
+        "sinonimos": "desprezar , desproteger , desamparar , desdenhar , dessocorrer , desvaler, desarrimar , desapoiar , desajudar , desfavorecer"
+    },
+    {
+        "palavra": "ABANDONO",
+        "sinonimos": "desafetação , naturalidade , negligência , simpleza , descuido , ingenuidade, singeleza , lhaneza , desalinho , indolência , desídia , incúria , inércia , inação , desleixo , desmazelo , languidez , desapercebimento , abstração , distração , acídia , preguiça , ócio, segnícia , moleza"
+    },
+    {
+        "palavra": "ABARATAR",
+        "sinonimos": "baratear , embaratecer , malbaratar , depreciar , menoscabar , menosprezar, desapreciar , desestimar, desencarecer"
+    },
+    {
+        "palavra": "ABANTESMA",
+        "sinonimos": "fantasma , espetro , larva, visão , duende , trasgo , manes , lêmures , avejão , aparição , sombra"
+    },
+    {
+        "palavra": "ABARCAR",
+        "sinonimos": "abranger , compreender"
+    },
+    {
+        "palavra": "ABARROADO",
+        "sinonimos": "obstinado , opiniático , cabeçudo , teimoso , tenaz , pertinaz , insistente, contumaz , caprichoso , encaprichado , afincado , constante , relutante , porfiado , persistente , perseverante , aferrado , firme, emperrado , birrento , embirrante"
+    },
+    {
+        "palavra": "ABASTADO",
+        "sinonimos": "rico, ricaço , opulento , endinheirado , apatacado , remediado , argentário, banqueiro , capitalista , milionário"
+    },
+    {
+        "palavra": "ABASTARDAR",
+        "sinonimos": "degenerar , desfigurar , deformar , desfear , afear, deturpar , desnaturar , corromper , deteriorar , estragar , perverter , viciar , adulterar , desvirtuar , depravar"
+    },
+    {
+        "palavra": "ABASTAR",
+        "sinonimos": "abastecer , fornir , fornecer , munir, municiar , municionar , ministrar , subministrar , prover , aprovisionar"
+    },
+    {
+        "palavra": "ABATER",
+        "sinonimos": "descontar , minuir , deminuir , deduzir , subtrair"
+    },
+    {
+        "palavra": "ABDICAR",
+        "sinonimos": "renunciar , demitir-se , exonerar-se , desobrigar-se , rejeitar , recusar , resignar , desistir , largar , abandonar , ceder"
+    },
+    {
+        "palavra": "ABENÇOAR",
+        "sinonimos": "bendizer , benzer , louvar , bendito , abençoado , bento , benção , benzimento"
+    },
+    {
+        "palavra": "ABERTURA",
+        "sinonimos": "greta , racha , resquício , fresta , fenda , fisga, rotura , buraco , orifício , aberta, furo, rombo , frincha , interstício , vão"
+    },
+    {
+        "palavra": "ABELHUDO",
+        "sinonimos": "entremetido , metediço , intrometido , introduzido , oferecido , intruso , ingerido , intrujão , taralhão"
+    },
+    {
+        "palavra": "ABERTO",
+        "sinonimos": "amplo , largo , espaçoso , vasto , extenso , desenvolvido , dilatado , explanado, lato, estirado"
+    },
+    {
+        "palavra": "ABESTALHADO",
+        "sinonimos": "aparvalhado , abobado , abobalhado , apalermado , apatetado , atoleimado , apapalvado , alorpado , acamelado , apataratado , apalhaçado , abasbacado , ajogralado , aburrado , apalonçado , abasbanado, amatutado , acaipirado , aparvoado , embotado , enfatuado , aboçalado , amatungado, pasmado , besta , burro , burrego , aburregado , parvo , bobo , palerma , pateta , tolo, estólido , papalvo , lorpa , camelo , palúrdio , patarata , lerdo , lerdaço , palhaço , basbaque , palonço , jogral , pascácio , pacóvio , papa-moscas , boca-aberta , tabaréu , caipira , basbana, matuto , bolônio , mentecapto , sandeu, doidivanas , beócio , estupidarrão , toleirão , parvoeirão , parvajola , truão , bufão , chocarreiro , maninelo , parvoinho , simples, simplório , bestiaga , bobório , camelório, boto , pato , patau , patocho , patego , pataroco , fátuo , estulto , tapado , obtuso , bronco , rombo , rude, boçal , estúpido , néscio, idiota , imbecil , alvar , ingênuo , ignaro , ignorante , ignorantão , quadrúpede , asno , asneirão , asinino , maturrão , jumento , charro"
+    },
+    {
+        "palavra": "ABICAR",
+        "sinonimos": "varar , fundear , ancorar , aportar, arribar , surgir , abordar , chegar , atracar"
+    },
+    {
+        "palavra": "ABJETO",
+        "sinonimos": "detestável , desprezível , ignóbil , indigno , baixo , vil, repelente , abominável , abominando , abominoso , repugnante , execrando , execrável , aborrecível , odioso"
+    },
+    {
+        "palavra": "ABJURAR",
+        "sinonimos": "renegar , trair, renunciar , apostatar, desprofessar , abrenunciar , converter-se"
+    },
+    {
+        "palavra": "ABLAÇÃO",
+        "sinonimos": "amputação"
+    },
+    {
+        "palavra": "ABNEGAÇÃO",
+        "sinonimos": "desinteresse , desapego , desambição , desamor , desprendimento , altruísmo"
+    },
+    {
+        "palavra": "ABLUIR",
+        "sinonimos": "purificar , lavar, apurar , limpar , mundificar , expurgar , purgar , acrisolar , acendrar , desmacular"
+    },
+    {
+        "palavra": "ABOLIR",
+        "sinonimos": "extinguir , ab-rogar , derrogar , antiquar , suprimir , cassar , anular , revogar , invalidar , proscrever , infirmar"
+    },
+    {
+        "palavra": "ABONO",
+        "sinonimos": "abonação , caução , penhor , hipoteca , fiança , garantia , sinal, arras , segurança"
+    },
+    {
+        "palavra": "ABORÍGENE",
+        "sinonimos": "autóctone , indígena , originário , natural , nativo , íncola"
+    },
+    {
+        "palavra": "ABORTAR",
+        "sinonimos": "malograr-se , frustrar-se , gorar , falhar , fracassar"
+    },
+    {
+        "palavra": "ABRA",
+        "sinonimos": "angra , golfo , enseada , recôncavo , lagamar , calheta , baía, esteiro , abrigada"
+    },
+    {
+        "palavra": "ABRANDAR",
+        "sinonimos": "moderar , suavizar , enternecer, adoçar , serenar , abonançar , apaziguar , acalmar , mitigar , amenizar , atenuar , temperar , adormentar , adormecer"
+    },
+    {
+        "palavra": "ABREVIAR",
+        "sinonimos": "encurtar , reduzir , restringir , diminuir"
+    },
+    {
+        "palavra": "ABRIGO",
+        "sinonimos": "refúgio , asilo, amparo , esconderijo, coito , guarida , homizio , valhacoito , resguardo , acolhida , acolhimento"
+    },
+    {
+        "palavra": "ABRIR",
+        "sinonimos": "desunir , separar , desligar , soltar , desprender , desatar , desmembrar , afastar, apartar , distanciar , divorciar"
+    },
+    {
+        "palavra": "ABROLHOS",
+        "sinonimos": "cachopos , escolhos , farelhões , recifes , baixos , baixios , alfaques , parcéis , restingas , sirtes , banco"
+    },
+    {
+        "palavra": "ABRUPTO",
+        "sinonimos": "alcantilado , íngreme , empinado, escarpado , aprumado , ladeirento"
+    },
+    {
+        "palavra": "ABSCONSO",
+        "sinonimos": "abscôndito , escondido , oculto, recôndito , retruso , secreto , clandestino , encoberto"
+    },
+    {
+        "palavra": "ABSOLUTISMO",
+        "sinonimos": "despotismo , autocracia , tirania , ditadura , caudilhismo , militarismo"
+    },
+    {
+        "palavra": "ABSOLUTO",
+        "sinonimos": "decisivo , definitivo , categórico, imperioso , imperativo , arrogante , irredutível , incondicional , inapelável , terminante , peremptório , cabal"
+    },
+    {
+        "palavra": "ABSORTO",
+        "sinonimos": "pensativo , enlevado , extasiado, admirado , assombrado , maravilhado , abismado , distraído , abstraído , abstração , distração , embebido , arroubado, arrebatado , contemplativo , meditativo , meditabundo , impressionado , apreensivo , preocupado , estático , extático , estatelado"
+    },
+    {
+        "palavra": "ABSTERSO",
+        "sinonimos": "terso , polido , brilhante , alvo, cândido , branco , limpo , límpido , lustroso, fúlgido , fulgente , refulgente , brunido , luzido , luzidio , luzente , reluzente , lúcido, nítido , nitente"
+    },
+    {
+        "palavra": "ABSTINENTE",
+        "sinonimos": "abstêmio , frugal , sóbrio , abstido , continente , temperante , temperado, moderado , parco , comedido"
+    },
+    {
+        "palavra": "ABSTRATO",
+        "sinonimos": "abstruso"
+    },
+    {
+        "palavra": "ABUNDÂNCIA",
+        "sinonimos": "fartura , riqueza , opulência"
+    },
+    {
+        "palavra": "ABUSÃO",
+        "sinonimos": "patranha , peta , crendice , superstição , prejuízo , preconceito , prevenção, preocupação , fanatismo"
+    },
+    {
+        "palavra": "ACABAR",
+        "sinonimos": "perecer , falecer , morrer , fenecer , finar-se , extinguir-se , expirar"
+    },
+    {
+        "palavra": "ACABADO",
+        "sinonimos": "perfeito , completo , magistral , cabal , pleno"
+    },
+    {
+        "palavra": "ACABRUNHAR",
+        "sinonimos": "amofinar , afligir , oprimir, humilhar , entristecer , contristar , vexar, magoar , desgostar , molestar , aborrecer, apoquentar , importunar , mortificar , angustiar , atormentar , agoniar , amargurar, consternar , inquietar , incomodar"
+    },
+    {
+        "palavra": "ACADEMIA",
+        "sinonimos": "escola , instituto , universidade, colégio , ginásio , liceu"
+    },
+    {
+        "palavra": "ACALENTAR",
+        "sinonimos": "amimar , consolar , agradar , afagar , ameigar , acariciar , acarinhar , acaridar"
+    },
+    {
+        "palavra": "ACAMPAMENTO",
+        "sinonimos": "arraial , bivaque"
+    },
+    {
+        "palavra": "ACANHADO",
+        "sinonimos": "tímido , vergonhoso , modesto , apoucado , pudico , pudibundo, acanhamento , timidez , vergonha , modéstia , apoucamento , pudor , pudicícia , pudor e pundonor , pundonoroso"
+    },
+    {
+        "palavra": "AÇÃO",
+        "sinonimos": "demanda , litígio , processo , pleito , questão , querela"
+    },
+    {
+        "palavra": "ACASO",
+        "sinonimos": "por acaso , porventura"
+    },
+    {
+        "palavra": "ACATAR",
+        "sinonimos": "acatamento , respeito , respeitar , veneração , venerar , reverência , reverenciar , deferência , deferir"
+    },
+    {
+        "palavra": "ACAUTELADO",
+        "sinonimos": "cauto , cauteloso , prevenido , precavido , precatado , avisado , prudente , previdente , cautela , prevenção , sobreaviso , precaução , aviso , prudência , previdência , acautelar , prevenir , precaver , precatar , avisar , prever"
+    },
+    {
+        "palavra": "ACEPÇÃO",
+        "sinonimos": "significação , sentido"
+    },
+    {
+        "palavra": "ACEDER",
+        "sinonimos": "aquiescer , consentir , aderir , condescender , concordar , anuir , conformar-se, assentir"
+    },
+    {
+        "palavra": "ACEITAR",
+        "sinonimos": "receber , tomar"
+    },
+    {
+        "palavra": "ACELERAR",
+        "sinonimos": "apressar , apressurar , ativar , aligeirar , precipitar"
+    },
+    {
+        "palavra": "ACENTO",
+        "sinonimos": "pronúncia"
+    },
+    {
+        "palavra": "ACERBO",
+        "sinonimos": "azedo , ácido , acre , acérrimo , agro, acrimonioso , travoso , travento , áspero, amargo , amargoso"
+    },
+    {
+        "palavra": "ACERTAR",
+        "sinonimos": "atinar , adivinhar"
+    },
+    {
+        "palavra": "ACESSÓRIO",
+        "sinonimos": "secundário , contingente , subse civo, sobressalente"
+    },
+    {
+        "palavra": "ACHADO",
+        "sinonimos": "invento , invenção , descoberta , descobrimento"
+    },
+    {
+        "palavra": "ACHAR",
+        "sinonimos": "encontrar , deparar , descobrir , inventar"
+    },
+    {
+        "palavra": "ACHAQUE",
+        "sinonimos": "moléstia , enfermidade , doença, incômodo , indisposição , mal"
+    },
+    {
+        "palavra": "ACIDENTAL",
+        "sinonimos": "fortuito , imprevisto , inesperado , inopinado , eventual , contingente, casual , ocasional , aleatório , incerto"
+    },
+    {
+        "palavra": "ACIDENTE",
+        "sinonimos": "desastre , desgraça , catástrofe , revés , calamidade"
+    },
+    {
+        "palavra": "ACLAMAR",
+        "sinonimos": "vitoriar , aplaudir , proclamar , glorificar"
+    },
+    {
+        "palavra": "ACLARAR",
+        "sinonimos": "esclarecer , elucidar , ilustrar , alumiar , iluminar , explicar , explanar"
+    },
+    {
+        "palavra": "ACOBARDAR",
+        "sinonimos": "intimidar , amedrontar , atemorizar , assustar , aterrar , aterrorizar , espavorir , apavorar , quebrantar"
+    },
+    {
+        "palavra": "AÇÕES",
+        "sinonimos": "fatos , feitos , façanhas , proezas"
+    },
+    {
+        "palavra": "ACOITAR",
+        "sinonimos": "acoitar-se , asilar , asilar-se , esconder , esconder-se , ocultar , ocultar-se , refugiar-se , abrigar , abrigar-se , homiziar , homiziar-se"
+    },
+    {
+        "palavra": "AÇOITAR",
+        "sinonimos": "vergastar , chicotar , azorragar , zurzir , surrar , chibatar , flagelar , fustigar"
+    },
+    {
+        "palavra": "ACOMODAR",
+        "sinonimos": "adequar , adaptar , ajustar , apropriar"
+    },
+    {
+        "palavra": "ACOMPANHAR",
+        "sinonimos": "seguir , escoltar , comboiar"
+    },
+    {
+        "palavra": "ACONSELHAR",
+        "sinonimos": "sugerir , insinuar , guiar , inspirar , persuadir"
+    },
+    {
+        "palavra": "ACONTECER",
+        "sinonimos": "suceder , ocorrer , dar-se , passar-se"
+    },
+    {
+        "palavra": "ACORDAR",
+        "sinonimos": "despertar"
+    },
+    {
+        "palavra": "ACOROÇOAR",
+        "sinonimos": "alentar , animar , induzir , incitar"
+    },
+    {
+        "palavra": "ACORRER",
+        "sinonimos": "acudir , afluir"
+    },
+    {
+        "palavra": "ACOSSAR",
+        "sinonimos": "perseguir"
+    },
+    {
+        "palavra": "ACRESCENTAR",
+        "sinonimos": "ajuntar , juntar , adicionar , adir , aditar , agregar"
+    },
+    {
+        "palavra": "ACREDITAR",
+        "sinonimos": "crer"
+    },
+    {
+        "palavra": "ACRO",
+        "sinonimos": "quebradiço , frágil"
+    },
+    {
+        "palavra": "ACUDIR",
+        "sinonimos": "socorrer , auxiliar , amparar , proteger , defender , ajudar , salvar , valer"
+    },
+    {
+        "palavra": "ACUSAR",
+        "sinonimos": "criminar , incriminar , culpar , inculpar , arguir"
+    },
+    {
+        "palavra": "ADARGA",
+        "sinonimos": "escudo , broquel , rodela , pavês , égide"
+    },
+    {
+        "palavra": "ADIÇÃO",
+        "sinonimos": "soma , total"
+    },
+    {
+        "palavra": "ADIANTAR",
+        "sinonimos": "antecipar"
+    },
+    {
+        "palavra": "ADEPTO",
+        "sinonimos": "sectário , iniciado , partidário , partidista , assecla , sequaz , ade-rente , faccionário , faccioso , parcial , seita , facção , partido , parcialidade"
+    },
+    {
+        "palavra": "ADEREÇAR",
+        "sinonimos": "enfeitar , adornar , ornar , ornamentar , ataviar , embelezar , embelecer , aformosear , engalanar , alindar , decorar , aprimorar , adorno , enfeite , ornato , atavio, adereço , ornamento , decoração , gala, primor"
+    },
+    {
+        "palavra": "ADESTRAR",
+        "sinonimos": "exercitar , instruir , ensinar , desembaraçar"
+    },
+    {
+        "palavra": "ADIAR",
+        "sinonimos": "transferir , diferir , dilatar , demorar, retardar , protelar , remanchar , aprazar , procrastinar , espaçar , estirar , prorrogar , contemporizar , ampliar , alongar , delongar, prolongar"
+    },
+    {
+        "palavra": "ADIVINHAR",
+        "sinonimos": "agoirar , profetizar , vaticinar , prognosticar , pressagiar , predizer , agoiro , adivinhação , profecia , vaticínio , prognóstico, presságio , predição"
+    },
+    {
+        "palavra": "ADIVINHO",
+        "sinonimos": "bruxo , feiticeiro , mandingueiro , mágico , astrólogo , quiromante , necromante , haríolo , profeta , vate"
+    },
+    {
+        "palavra": "ADJACENTE",
+        "sinonimos": "contíguo , vizinho , próximo , junto , confim , confinante , fronteiro , limítrofe, imediato , unido , pegado , chegado"
+    },
+    {
+        "palavra": "ADJETIVO",
+        "sinonimos": "epíteto"
+    },
+    {
+        "palavra": "ADJUNTO",
+        "sinonimos": "adido"
+    },
+    {
+        "palavra": "ADJURAR",
+        "sinonimos": "conjurar , esconjurar , exorcizar"
+    },
+    {
+        "palavra": "ADMIRAÇÃO",
+        "sinonimos": "pasmo , espanto , assombro , susto , maravilha , arrebatamento , transporte , arroubo , êxtase , entusiasmo , enlevo , surpresa , admirado , pasmado , espantado , assombrado , assustado , maravilhado , arrebatado , transportado , arroubado , extasiado , entusiasmado , surpreendido , enlevado"
+    },
+    {
+        "palavra": "ADMIRAR",
+        "sinonimos": "apreciar , contemplar , considerar , examinar , ver, olhar , encarar , fitar, observar"
+    },
+    {
+        "palavra": "ADMITIR",
+        "sinonimos": "permitir , consentir , tolerar"
+    },
+    {
+        "palavra": "ADMOESTAR",
+        "sinonimos": "advertir , repreender , censurar , arguir , avisar , aconselhar , verberar , estigmatizar"
+    },
+    {
+        "palavra": "ADOECER",
+        "sinonimos": "enfermar"
+    },
+    {
+        "palavra": "ADOLESCÊNCIA",
+        "sinonimos": "juventude , mocidade , puberdade , mancebia , adolescente , jovem , moço , púbere , mancebo"
+    },
+    {
+        "palavra": "ADORAÇÃO",
+        "sinonimos": "reverência , veneração , acatamento , respeito , honra , homenagem , adorar, honrar , venerar , reverenciar , acatar , respeitar , adorável , venerável , venerando , acatável , respeitável"
+    },
+    {
+        "palavra": "ADUANA",
+        "sinonimos": "alfândega , aduaneiro , alfandegário"
+    },
+    {
+        "palavra": "ADUBAR",
+        "sinonimos": "temperar , condimentar , adubo , tempero , condimento"
+    },
+    {
+        "palavra": "ADULAR",
+        "sinonimos": "lisonjear , louvaminhar , bajular , engrossar , adulador , lisonjeiro , louvaminheiro , bajulador , engrossador"
+    },
+    {
+        "palavra": "ADULTERAR",
+        "sinonimos": "contrafazer , falsificar , imitar"
+    },
+    {
+        "palavra": "ADUNAR",
+        "sinonimos": "aunar , coadunar , unir , reunir , unificar , ligar , aliar , coligar , incorporar , agregar , congregar , ajuntar , agrupar"
+    },
+    {
+        "palavra": "ADUNCO",
+        "sinonimos": "curvo , recurvado , arcado , arqueado"
+    },
+    {
+        "palavra": "ADUZIR",
+        "sinonimos": "alegar"
+    },
+    {
+        "palavra": "ADVENTÍCIO",
+        "sinonimos": "ádvena , alienígena , forasteiro, estrangeiro"
+    },
+    {
+        "palavra": "ADVERSO",
+        "sinonimos": "oposto , contrário , desfavorável"
+    },
+    {
+        "palavra": "ADVERSIDADE",
+        "sinonimos": "sorte adversa , desgraça , desdita , infelicidade , infortúnio , desfortuna , desventura , caiporismo , calamidade , desgraçado , desditoso , infeliz , infortunado , desfortunado , desafortunado , mal-afortunado , desventurado , desaventurado , mal-aventurado , caipora"
+    },
+    {
+        "palavra": "ADVOCACIA",
+        "sinonimos": "advocatura"
+    },
+    {
+        "palavra": "ADVOGADO",
+        "sinonimos": "patrono , patrocinador , padroeiro , defensor , protetor , intercessor , mediador , medianeiro , intermediário , interventor"
+    },
+    {
+        "palavra": "AFABILIDADE",
+        "sinonimos": "agrado , amabilidade , civilidade , urbanidade , polidez , cortesia , cortesania , delicadeza , benignidade , benevolência , carinho , afeição , complacência , bondade , fineza , ternura , meiguice , indulgência , afável , agradável , amável , civil , urbano , polido , cortês , cortesão , delicado , benigno , benévolo , benevolente , carinhoso , afetuoso , complacente , bom , fino, bondoso, obsequioso , terno , meigo , indulgente , amistoso"
+    },
+    {
+        "palavra": "AFASIA",
+        "sinonimos": "afonia , mudez , afásico , afônico , mudo"
+    },
+    {
+        "palavra": "AFÃ",
+        "sinonimos": "azáfama , faina, lida, fadiga , afadigamento , aforçuramento , luta , trabalho , labor , laboração , labuta , labutação , lucubração"
+    },
+    {
+        "palavra": "AFASTAR",
+        "sinonimos": "retirar , arredar , desviar , deslocar, descaminhar , apartar, separar"
+    },
+    {
+        "palavra": "AFERRO",
+        "sinonimos": "apego"
+    },
+    {
+        "palavra": "AFERROLHAR",
+        "sinonimos": "fechar , trancar , ferrolho , fecho , tranca"
+    },
+    {
+        "palavra": "AFETAÇÃO",
+        "sinonimos": "fingimento , disfarce , simulação, dissimulação , contrafação , aparência , fantasia , afetar , fingir , disfarçar , simular , dissimular , contrafazer , aparentar , fantasiar , afetado , fingido , disfarçado , simulado , dissimulado, contrafeito , aparente , fantasiado"
+    },
+    {
+        "palavra": "AFETIVO",
+        "sinonimos": "afetuoso"
+    },
+    {
+        "palavra": "AFETOS",
+        "sinonimos": "paixões"
+    },
+    {
+        "palavra": "AFETUOSO",
+        "sinonimos": "apaixonado"
+    },
+    {
+        "palavra": "AFINIDADE",
+        "sinonimos": "agnação , cognação , consanguinidade , afim , ágnato , cognato"
+    },
+    {
+        "palavra": "AFIRMAR",
+        "sinonimos": "dizer , confirmar , ratificar , corroborar , comprovar , demonstrar , assegurar, asseverar , garantir , atestar , certificar"
+    },
+    {
+        "palavra": "AFIXAR",
+        "sinonimos": "colar , pregar , segurar , grudar , fixar, aplicar , apor , sobrepor , pegar , chumbar, soldar , ligar , atar, prender"
+    },
+    {
+        "palavra": "AFLIÇÃO",
+        "sinonimos": "pesar , desgosto , mágoa , tristeza, pesadume , pesadelo , inquietação , agonia , consternação, opressão , angústia , amargura , ansiedade, transe , tormento , suplício , tortura, dor, sofrimento , padecimento , pena , tribulação , trabalhos , incômodos , aflito , pesaroso , desgostoso , magoado , triste , inquieto , agoniado , consternado , angustiado, amargurado , ansioso , supliciado , atormentado , torturado , doloroso , dorido , dolorido , penalizado , atribulado , incomodado"
+    },
+    {
+        "palavra": "AFLUÊNCIA",
+        "sinonimos": "concurso , concorrência , multidão , turba , ajuntamento , reunião , assembleia , aglomeração , agrupamento , turbamulta , tropel"
+    },
+    {
+        "palavra": "AFORA",
+        "sinonimos": "exceto"
+    },
+    {
+        "palavra": "AFIADO",
+        "sinonimos": "amolado , aguçado , agudo , cortante , talhante , incisivo"
+    },
+    {
+        "palavra": "AFOITO",
+        "sinonimos": "desafrontado , temerário , confiado, arrojado , atrevido , inconsiderado , arriscado , imponderado , decidido , determinado, ousado , audaz , audacioso , destemido, intemente , impávido , corajoso , animoso, valoroso , valente , impertérrito , intré-pido, heroico , resoluto , bravo , arrebatado , impetuoso , denodado , ardido , veemente , precipitado , violento , intrêmulo , imperturbável , impassível , afoiteza , temeridade , confiança , arrojo , atrevimento , inconsideração , decisão , resolução , determinação , ousadia , audácia , destemor , impavidez , coragem , ânimo , valor , valentia , intrepidez , heroísmo , heroicidade , bravura , arrebatamento , ímpeto , impetuosidade , denodo , ardimento , veemência , precipitação , violência , imperturbabilidade , impassibilidade"
+    },
+    {
+        "palavra": "AFRONTA",
+        "sinonimos": "agravo , ofensa , injúria , ultraje , insulto , avania , vexame , zombaria , mofa , irrisão , chacota , sátira , apodo , gracejo , remoque , troça , chasco , escárnio"
+    },
+    {
+        "palavra": "AFRONTAR",
+        "sinonimos": "arrostar , encarar"
+    },
+    {
+        "palavra": "AGONIZAR",
+        "sinonimos": "estertorar"
+    },
+    {
+        "palavra": "AGRADECIDO",
+        "sinonimos": "grato , reconhecido , obrigado, penhorado , cativo"
+    },
+    {
+        "palavra": "AGRESTE",
+        "sinonimos": "campestre , campesino , rústico , silvestre , selvático , selvagem"
+    },
+    {
+        "palavra": "AGRÍCOLA",
+        "sinonimos": "agrário , rural , rústico"
+    },
+    {
+        "palavra": "AGRICULTURA",
+        "sinonimos": "agronomia , agricultor , agrônomo , cultivador , lavrador , colono"
+    },
+    {
+        "palavra": "AGUARDAR",
+        "sinonimos": "esperar"
+    },
+    {
+        "palavra": "AGUAR",
+        "sinonimos": "banhar , molhar , irrigar , regar , alagar , inundar"
+    },
+    {
+        "palavra": "AGUENTAR",
+        "sinonimos": "suster , suspender , sustentar , amparar , apoiar , escorar , especar , estear"
+    },
+    {
+        "palavra": "AIO",
+        "sinonimos": "preceptor , mestre , amo, instrutor , institutor , educador , professor , lente , catedrático , pedagogo"
+    },
+    {
+        "palavra": "AGIOTA",
+        "sinonimos": "usurário , onzeneiro"
+    },
+    {
+        "palavra": "AGITAÇÃO",
+        "sinonimos": "insurreição , revolta , rebelião , levantamento , motim , arruaça , sedição , revolução , pronunciamento , convulsão , comoção , choque , abalo , sublevação , conflagração , cataclismo"
+    },
+    {
+        "palavra": "AGITAR",
+        "sinonimos": "ventilar , aventar , discutir , debater, disputar , tratar , controverter"
+    },
+    {
+        "palavra": "AJUIZADO",
+        "sinonimos": "sensato , sisudo , assisado , sábio, prudente , judicioso , cordato , grave , sério, circunspeto , ponderado , discreto , avisado"
+    },
+    {
+        "palavra": "ALARGAR",
+        "sinonimos": "ampliar , dilatar"
+    },
+    {
+        "palavra": "ALARIDO",
+        "sinonimos": "gritaria , celeuma , berreiro , vozeria, clamor , bramido , algazarra , tumulto , turba , alvoroço , barulho , bulha , arruído , rumor , borborinho , sussurro , murmúrio , murmurinho"
+    },
+    {
+        "palavra": "ALARME",
+        "sinonimos": "temor , medo , susto , terror , espanto , pânico , pavor , receio , assombro , assombramento , sobressalto"
+    },
+    {
+        "palavra": "ALBERGARIA",
+        "sinonimos": "albergue , guarida , estalagem, pousada , hospedaria , hotel , pensão"
+    },
+    {
+        "palavra": "ALBESCENTE",
+        "sinonimos": "alvacento , alvadio , esbranquiçado"
+    },
+    {
+        "palavra": "ALCANÇAR",
+        "sinonimos": "chegar , atingir , tocar"
+    },
+    {
+        "palavra": "ALCANCE",
+        "sinonimos": "desfalque , irregularidade"
+    },
+    {
+        "palavra": "ALCANTIL",
+        "sinonimos": "despenhadeiro , ribanceira , grota , itaimbé , precipício , escarpa , fraga , riba, ribança"
+    },
+    {
+        "palavra": "ALÇAR",
+        "sinonimos": "erguer , elevar , levantar"
+    },
+    {
+        "palavra": "ALCATEIA",
+        "sinonimos": "bando , multidão , enxame , turba , turma , grupo , magote , rancho , quadrilha , legião , malta , súcia , corja , matula , caterva , matilha , horda , troço , troça , chusma"
+    },
+    {
+        "palavra": "ALCATIFA",
+        "sinonimos": "alfombra , tapete , tapeçaria"
+    },
+    {
+        "palavra": "ALCOICE",
+        "sinonimos": "lupanar , prostíbulo , bordel , sentina"
+    },
+    {
+        "palavra": "ALCUNHA",
+        "sinonimos": "apelido , nome , sobrenome , agnome , cognome , prenome , antonomásia , apodo"
+    },
+    {
+        "palavra": "ALEGAR",
+        "sinonimos": "citar"
+    },
+    {
+        "palavra": "ALEGRIA",
+        "sinonimos": "ledice , júbilo , exultação , regozijo, contentamento , jovialidade , alacridade , satisfação , alegre , ledo, jubiloso , exultante , contente , jovial , álacre , satisfeito"
+    },
+    {
+        "palavra": "ALEIVE",
+        "sinonimos": "aleivosia , calúnia , traição , , perfídia , deslealdade , infidelidade , falsidade"
+    },
+    {
+        "palavra": "ALENTADO",
+        "sinonimos": "vigoroso , forte, robusto , valente , esforçado , reforçado , possante , pujante , potente , alento , vigor , força, fortaleza , robustez , valentia , esforço, reforço , possança , pujança , potência"
+    },
+    {
+        "palavra": "ALFANJE",
+        "sinonimos": "cimitarra , espada , gládio , terçado, durindana , montante , chanfalho , sabre"
+    },
+    {
+        "palavra": "ALFIM",
+        "sinonimos": "enfim , finalmente , afinal , por fim"
+    },
+    {
+        "palavra": "ALGOZ",
+        "sinonimos": "carrasco , verdugo , carnífice , sacrificador , executor"
+    },
+    {
+        "palavra": "ALGUNS",
+        "sinonimos": "certos"
+    },
+    {
+        "palavra": "ALHEIO",
+        "sinonimos": "de outrem , estranho"
+    },
+    {
+        "palavra": "ALHURES",
+        "sinonimos": "algures"
+    },
+    {
+        "palavra": "ALI",
+        "sinonimos": "lá, acolá , aí, além"
+    },
+    {
+        "palavra": "ALIANÇA",
+        "sinonimos": "união , casamento , consórcio , matrimônio , núpcias , bodas , noivado"
+    },
+    {
+        "palavra": "ALICERCE",
+        "sinonimos": "base , fundamento , embasamento , peanha , pedestal"
+    },
+    {
+        "palavra": "ALICIAR",
+        "sinonimos": "engodar , seduzir , subornar , peitar, corromper"
+    },
+    {
+        "palavra": "ALIENAR",
+        "sinonimos": "vender , trocar , permutar , traficar, cambiar , escambiar"
+    },
+    {
+        "palavra": "ALIMENTAR",
+        "sinonimos": "nutrir , sustentar , manter"
+    },
+    {
+        "palavra": "ALIMPA",
+        "sinonimos": "monda , poda"
+    },
+    {
+        "palavra": "ALISTAR",
+        "sinonimos": "relacionar , arrolar , catalogar , inventariar"
+    },
+    {
+        "palavra": "ALMA",
+        "sinonimos": "espírito , ânimo , eu, coração"
+    },
+    {
+        "palavra": "ALMANAQUE",
+        "sinonimos": "calendário , folhinha , repertório , anuário , guia , indicador , vademeco , roteiro , manual , prontuário"
+    },
+    {
+        "palavra": "ALMEJAR",
+        "sinonimos": "aspirar , desejar , ambicionar , apetecer , cobiçar , pretender"
+    },
+    {
+        "palavra": "ALMO",
+        "sinonimos": "nutriente , nutritivo , criador"
+    },
+    {
+        "palavra": "ALOCUÇÃO",
+        "sinonimos": "proclamação , arenga , discurso , fala , prática , arrazoamento , oração, sermão , homilia , panegírico , prédica , preleção , conferência , elogio"
+    },
+    {
+        "palavra": "ALPENDRE",
+        "sinonimos": "alpendrada , telheiro , pórtico, adro , átrio , vestíbulo"
+    },
+    {
+        "palavra": "ALTANERIA",
+        "sinonimos": "altivez , sobranceria , orgulho, soberba , empáfia , impostura , fatuidade"
+    },
+    {
+        "palavra": "ALTITUDE",
+        "sinonimos": "altura"
+    },
+    {
+        "palavra": "ALTEZA",
+        "sinonimos": "altura"
+    },
+    {
+        "palavra": "ALTERAR",
+        "sinonimos": "mudar , variar , modificar , reformar , transformar , renovar , remodelar , reorganizar , reconstruir , reconstituir , refazer, retificar , corrigir , emendar"
+    },
+    {
+        "palavra": "ALUCINAR",
+        "sinonimos": "ofuscar , confundir , cegar , deslumbrar , fascinar"
+    },
+    {
+        "palavra": "ALUCINADO",
+        "sinonimos": "louco , perdido , cego, demente , doido , desvairado , delirante , insano, insensato , aturdido , atordoado , estonteado"
+    },
+    {
+        "palavra": "ALUDIR",
+        "sinonimos": "referir , indicar , expor , enunciar, mencionar"
+    },
+    {
+        "palavra": "ALUSIVO",
+        "sinonimos": "referente , relativo , concernente, respetivo"
+    },
+    {
+        "palavra": "ALUGAR",
+        "sinonimos": "arrendar , alquilar , locar, sublocar"
+    },
+    {
+        "palavra": "ALUNO",
+        "sinonimos": "discípulo , educando"
+    },
+    {
+        "palavra": "ÂMAGO",
+        "sinonimos": "imo, profundeza , recesso , interior , íntimo , centro , meio, seio, cerne , coração , medula , miolo"
+    },
+    {
+        "palavra": "AMAINAR",
+        "sinonimos": "afrouxar , enfraquecer , abater, abrandar , diminuir , sossegar , acalmar , serenar , suavizar , tranquilizar , atenuar"
+    },
+    {
+        "palavra": "AMANSAR",
+        "sinonimos": "domar , domesticar"
+    },
+    {
+        "palavra": "AMANTE",
+        "sinonimos": "concubina , barregã , amásia , amiga , manceba , comborça"
+    },
+    {
+        "palavra": "AMARROTAR",
+        "sinonimos": "marlotar , amarfanhar , machucar , amassar , enrugar , arrugar , franzir , frisar , riçar , ratinar , encrespar , embrulhar , crispar, arrepiar , encaracolar , encarapinhar , encarquilhar"
+    },
+    {
+        "palavra": "AMBIÇÃO",
+        "sinonimos": "cobiça , avareza , avidez , cupidez, ganância , gana"
+    },
+    {
+        "palavra": "AMBÍGUO",
+        "sinonimos": "anfibológico , impreciso , confuso, equívoco , duvidoso , dúbio , incerto , vário , ambiguidade , anfibologia , confusão , equívoco , dúvida , incerteza"
+    },
+    {
+        "palavra": "ÂMBITO",
+        "sinonimos": "área, recinto"
+    },
+    {
+        "palavra": "AMBOS",
+        "sinonimos": "os dois , um e outro"
+    },
+    {
+        "palavra": "AMBULANTE",
+        "sinonimos": "errante , vagabundo , teatino, peregrino , nômade , perdido , vagante , passeante , vadio , tunante , airado , vaganau"
+    },
+    {
+        "palavra": "AMEAÇAR",
+        "sinonimos": "intimidar , amedrontar , atemorizar , assustar"
+    },
+    {
+        "palavra": "AMENO",
+        "sinonimos": "agradável , aprazível , delicioso , deleitoso , deleitável , grato"
+    },
+    {
+        "palavra": "AMOLGAR",
+        "sinonimos": "abolar , amossar , amassar , deformar , embotar , esmagar"
+    },
+    {
+        "palavra": "AMONTOAR",
+        "sinonimos": "acumular , ajuntar , reunir , arrumar , emaçar"
+    },
+    {
+        "palavra": "AMOSTRA",
+        "sinonimos": "mostra , prova , sinal, indício , demonstração"
+    },
+    {
+        "palavra": "AMPLIDÃO",
+        "sinonimos": "amplitude , vastidão , grandeza, extensão , imensidade , imensidão , âmbito"
+    },
+    {
+        "palavra": "ANACORETA",
+        "sinonimos": "eremita , solitário , cenobita , monge , asceta , religioso , fanático , frade"
+    },
+    {
+        "palavra": "ANARQUIA",
+        "sinonimos": "desordem , desgoverno , desconcerto , desregramento , discórdia , cizânia , caos, confusão , balbúrdia"
+    },
+    {
+        "palavra": "ANATEMATIZAR",
+        "sinonimos": "excomungar , amaldiçoar, anátema , excomunhão , maldição"
+    },
+    {
+        "palavra": "ANATOMIA",
+        "sinonimos": "dissecção , autópsia"
+    },
+    {
+        "palavra": "ANCIÃO",
+        "sinonimos": "velho"
+    },
+    {
+        "palavra": "ANSIEDADE",
+        "sinonimos": "ânsia"
+    },
+    {
+        "palavra": "ANDAÇO",
+        "sinonimos": "contágio , epidemia , endemia , peste"
+    },
+    {
+        "palavra": "ANDAR",
+        "sinonimos": "caminhar , ir, marchar , seguir , passar , transitar"
+    },
+    {
+        "palavra": "ANDRAJOS",
+        "sinonimos": "trapos , farrapos , molambos"
+    },
+    {
+        "palavra": "ANEXAR",
+        "sinonimos": "anexação , anexado , anexo , incorporar , incorporação , incorporado"
+    },
+    {
+        "palavra": "ANEXO",
+        "sinonimos": "dependente , unido"
+    },
+    {
+        "palavra": "ANGARIAR",
+        "sinonimos": "aliciar , recrutar"
+    },
+    {
+        "palavra": "ANGU",
+        "sinonimos": "pirão , mingau , mexido , revirado , papa, escaldado"
+    },
+    {
+        "palavra": "ANELO",
+        "sinonimos": "desejo , aspiração , anseio , vontade"
+    },
+    {
+        "palavra": "ANOITECER",
+        "sinonimos": "enoitecer"
+    },
+    {
+        "palavra": "ANOSO",
+        "sinonimos": "velho , idoso , secular , antigo"
+    },
+    {
+        "palavra": "ANOTAR",
+        "sinonimos": "anotações , notas , comentar , comentário , comento , interpretar , interpretação , explicar , explicação , explanar , explanação , apostilar , apostilas , cotas , ob-servações , glosas"
+    },
+    {
+        "palavra": "ANUVIAR",
+        "sinonimos": "nublar , escurecer , obscurecer, obcecar , ensombrar , carregar , toldar , fechar , entenebrecer"
+    },
+    {
+        "palavra": "ANTECEDENTE",
+        "sinonimos": "precedente , anterior , prévio"
+    },
+    {
+        "palavra": "ANTECEDENTES",
+        "sinonimos": "precedentes"
+    },
+    {
+        "palavra": "ANTECESSOR",
+        "sinonimos": "predecessor"
+    },
+    {
+        "palavra": "ANTECESSORES",
+        "sinonimos": "antepassados , ascendentes , pais, avós, antigos , maiores , avoengos"
+    },
+    {
+        "palavra": "ANTECIPADAMENTE",
+        "sinonimos": "adiantadamente , prematuramente"
+    },
+    {
+        "palavra": "ANTEMURAL",
+        "sinonimos": "muro , muralha"
+    },
+    {
+        "palavra": "ANTIPATIA",
+        "sinonimos": "ódio , aversão , repugnância , quizila , asca, asco, zanga , rancor , gana , horror"
+    },
+    {
+        "palavra": "ANTIQUADO",
+        "sinonimos": "obsoleto , desusado , arcaico"
+    },
+    {
+        "palavra": "ANTÍTESE",
+        "sinonimos": "contraste , antífrase , antinomia, antilogia , contradição , contrariedade , oposição"
+    },
+    {
+        "palavra": "ANTRO",
+        "sinonimos": "caverna , furna , gruta , lapa, cova , buraco , toca, subterrâneo"
+    },
+    {
+        "palavra": "APARATO",
+        "sinonimos": "pompa , sumptuosidade , magnificência , grandeza , majestade , ostentação , esplendor , alardo , fausto , luxo"
+    },
+    {
+        "palavra": "APARECIMENTO",
+        "sinonimos": "aparição"
+    },
+    {
+        "palavra": "APARÊNCIA",
+        "sinonimos": "ar , exterior , exterioridade, visos , mostra , aspeto , semblante"
+    },
+    {
+        "palavra": "APEDREJAR",
+        "sinonimos": "lapidar"
+    },
+    {
+        "palavra": "APELAÇÃO",
+        "sinonimos": "agravo , recurso"
+    },
+    {
+        "palavra": "APENAS",
+        "sinonimos": "só , exclusivamente"
+    },
+    {
+        "palavra": "APÊNDICE",
+        "sinonimos": "suplemento"
+    },
+    {
+        "palavra": "APERTADO",
+        "sinonimos": "estreito"
+    },
+    {
+        "palavra": "APÓCRIFO",
+        "sinonimos": "suposto , pretenso , fictício , fabuloso , falso"
+    },
+    {
+        "palavra": "APOLOGIA",
+        "sinonimos": "defesa , justificação , elogio , panegírico"
+    },
+    {
+        "palavra": "APOSENTAR",
+        "sinonimos": "reformar , jubilar"
+    },
+    {
+        "palavra": "APÓSTOLO",
+        "sinonimos": "missionário , evangelizador , propagandista , anunciador , pregoeiro , precursor , núncio , mensageiro , emissário , enviado"
+    },
+    {
+        "palavra": "APOTEOSE",
+        "sinonimos": "deificação – Sobre estas duas palavras escreve Lacerda: “ Apoteose era a cerimônia mediante a qual era alguém posto no número dos deuses"
+    },
+    {
+        "palavra": "APREÇO",
+        "sinonimos": "estima , consideraç ão, conta"
+    },
+    {
+        "palavra": "APRESAR",
+        "sinonimos": "prender , arrestar , apreender , capturar , apanhar , segurar , deter"
+    },
+    {
+        "palavra": "APRISCO",
+        "sinonimos": "redil , curral , mangueira"
+    },
+    {
+        "palavra": "APROFUNDAR",
+        "sinonimos": "profundar"
+    },
+    {
+        "palavra": "APTIDÃO",
+        "sinonimos": "disposição , inclinação , propensão, vocação , talento , capacidade , idoneidade, habilidade , jeito , gosto"
+    },
+    {
+        "palavra": "AQUI",
+        "sinonimos": "cá"
+    },
+    {
+        "palavra": "ARDIL",
+        "sinonimos": "estratagema , logro , arteirice , astúcia, cilada , emboscada , armadilha"
+    },
+    {
+        "palavra": "ARMADA",
+        "sinonimos": "esquadra , esquadrilha , frota"
+    },
+    {
+        "palavra": "ARMISTÍCIO",
+        "sinonimos": "suspensão de armas , tréguas"
+    },
+    {
+        "palavra": "ARRANCAR",
+        "sinonimos": "tirar, sacar , extrair , arrebatar"
+    },
+    {
+        "palavra": "ARREPENDIMENTO",
+        "sinonimos": "remorso , pesar , contrição , atrição , compunção , penitência"
+    },
+    {
+        "palavra": "E",
+        "sinonimos": "no entanto, o uso autoriza o emprego desta palavra tratando-se de qualquer substância que dá perfume"
+    },
+    {
+        "palavra": "ARROIO",
+        "sinonimos": "regueiro , regato , ribeiro , ribeira , rio, riacho , ribeirão , córrego , torrente"
+    },
+    {
+        "palavra": "ARTE",
+        "sinonimos": "ciência"
+    },
+    {
+        "palavra": "ARTICULAR",
+        "sinonimos": "pronunciar , dizer , proferir , falar"
+    },
+    {
+        "palavra": "ARTIFICIAL",
+        "sinonimos": "artificioso"
+    },
+    {
+        "palavra": "ARTIFÍCIO",
+        "sinonimos": "artefacto"
+    },
+    {
+        "palavra": "ASSASSINAR",
+        "sinonimos": "matar , trucidar , massacrar , degolar"
+    },
+    {
+        "palavra": "ASSASSINO",
+        "sinonimos": "assassínio , assassinato , matador, morte , matança , morticínio , homicida, homicídio"
+    },
+    {
+        "palavra": "ASSAZ",
+        "sinonimos": "bastante , suficiente"
+    },
+    {
+        "palavra": "ASSÍDUO",
+        "sinonimos": "frequente"
+    },
+    {
+        "palavra": "ASSINAR",
+        "sinonimos": "firmar , subscrever"
+    },
+    {
+        "palavra": "ASSONÂNCIA",
+        "sinonimos": "assoante , consonância , consoante , rima , rimado"
+    },
+    {
+        "palavra": "ASSUNTO",
+        "sinonimos": "matéria , objeto"
+    },
+    {
+        "palavra": "ASTROLOGIA",
+        "sinonimos": "astronomia"
+    },
+    {
+        "palavra": "ATA",
+        "sinonimos": "auto, assento , registro , termo"
+    },
+    {
+        "palavra": "ATAÚDE",
+        "sinonimos": "caixão , tumba , esquife , féretro"
+    },
+    {
+        "palavra": "ATEU",
+        "sinonimos": "incrédulo , descrente , descrido , cético , ímpio , sacrílego , irreligioso, infiel , gentio , pagão , idólatra , heterodoxo , herege , leigo , profano"
+    },
+    {
+        "palavra": "ATENÇÃO",
+        "sinonimos": "aplicação , reflexão , ponderação , meditação , contensão , apercepção , cogitação , cuidado , vigilância , solicitude , desvelo , dedicação"
+    },
+    {
+        "palavra": "ATENTADO",
+        "sinonimos": "crime , delito , culpa , falta, pecado, transgressão , infração , violação , quebra, quebrantamento , tentativa"
+    },
+    {
+        "palavra": "ATITUDE",
+        "sinonimos": "postura , posiç ão, gesto"
+    },
+    {
+        "palavra": "ATIVO",
+        "sinonimos": "eficaz , enérgico , violento , forte"
+    },
+    {
+        "palavra": "ATOR",
+        "sinonimos": "cômico , comediante , artista"
+    },
+    {
+        "palavra": "ATRIBUIR",
+        "sinonimos": "imputar"
+    },
+    {
+        "palavra": "ATRIBUTO",
+        "sinonimos": "predicado , propriedade , qualidade"
+    },
+    {
+        "palavra": "ATUALMENTE",
+        "sinonimos": "presentemente , hoje, agora, presente , atual"
+    },
+    {
+        "palavra": "ATUAR",
+        "sinonimos": "operar , agir , influir"
+    },
+    {
+        "palavra": "ATURAR",
+        "sinonimos": "sofrer , suportar , aguentar , tolerar, padecer"
+    },
+    {
+        "palavra": "ATURDIR",
+        "sinonimos": "atordoar , perturbar , conturbar"
+    },
+    {
+        "palavra": "AUGUSTO",
+        "sinonimos": "majestoso , imponente , soberano, solene , pontifical , grandioso , glorioso , magnífico , pomposo , esplêndido , ostentoso"
+    },
+    {
+        "palavra": "AUMENTAR",
+        "sinonimos": "crescer , avolumar-se , avultar, engrandecer , ampliar-se , amplificar-se , dilatar-se , inchar , engrossar , intumescer , empolar , empolamar , exagerar , encorpar"
+    },
+    {
+        "palavra": "AURA",
+        "sinonimos": "brisa , zéfiro , aragem , viração , favônio"
+    },
+    {
+        "palavra": "AUSPÍCIOS",
+        "sinonimos": "proteção , patrocínio , salvaguarda"
+    },
+    {
+        "palavra": "AUSPICIOSO",
+        "sinonimos": "esperançoso , prometedor"
+    },
+    {
+        "palavra": "AUSTERO",
+        "sinonimos": "severo , rigoroso , rígido , ríspido, duro , inflexível , inexorável , inabalável , inalterável"
+    },
+    {
+        "palavra": "AUTÊNTICO",
+        "sinonimos": "formal , solene"
+    },
+    {
+        "palavra": "AUTONOMIA",
+        "sinonimos": "independência , soberania"
+    },
+    {
+        "palavra": "AUTOR",
+        "sinonimos": "escritor , publicista"
+    },
+    {
+        "palavra": "AUTORIDADE",
+        "sinonimos": "poder , potestade , força"
+    },
+    {
+        "palavra": "AZADO",
+        "sinonimos": "oportuno , próprio , conveniente , adequado , propício"
+    },
+    {
+        "palavra": "AZIAGO",
+        "sinonimos": "funesto , nefasto , infausto , agoirento"
+    },
+    {
+        "palavra": "BAILE",
+        "sinonimos": "bailado , dança , folia , folgança , fandango , samba , jongo"
+    },
+    {
+        "palavra": "BALA",
+        "sinonimos": "projetil"
+    },
+    {
+        "palavra": "BALBUCIAR",
+        "sinonimos": "gaguejar , tartamudear"
+    },
+    {
+        "palavra": "BANAL",
+        "sinonimos": "trivial , vulgar , comum , ordinário , corriqueiro , familiar"
+    },
+    {
+        "palavra": "BANCARROTA",
+        "sinonimos": "falência , quebra"
+    },
+    {
+        "palavra": "BANDA",
+        "sinonimos": "charanga , fanfarra , filarmônica , orquestra , música"
+    },
+    {
+        "palavra": "BANDEIRA",
+        "sinonimos": "estandarte , pavilhão , insígnia, vexilo"
+    },
+    {
+        "palavra": "BANDIDO",
+        "sinonimos": "salteador , malfeitor , bandoleiro, celerado , facínora"
+    },
+    {
+        "palavra": "BANIR",
+        "sinonimos": "exilar , desterrar , deportar , expatriar, proscrever , degredar"
+    },
+    {
+        "palavra": "BARBARIDADE",
+        "sinonimos": "crueldade , ferocidade , desumanidade"
+    },
+    {
+        "palavra": "BARBARISMO",
+        "sinonimos": "solecismo"
+    },
+    {
+        "palavra": "BARCO",
+        "sinonimos": "embarcação , navio , nau, fragata , caravela , galera , galé, iate, batel , batelão , alvarenga , lancha , barca , chata , catraia , bote, xaveco , tartana , manchua , gôndola , galeota , canoa , junco , piroga , igara , barcaça, galeão , bergantim , brigue , escuna"
+    },
+    {
+        "palavra": "BARDO",
+        "sinonimos": "trovador , vate, rapsoda"
+    },
+    {
+        "palavra": "BASTARDO",
+        "sinonimos": "natural , espúrio , ilegítimo"
+    },
+    {
+        "palavra": "BATOLOGIA",
+        "sinonimos": "tautologia , redundância , perissologia"
+    },
+    {
+        "palavra": "BEATO",
+        "sinonimos": "carola , hipócrita , tartufo"
+    },
+    {
+        "palavra": "BEIÇO",
+        "sinonimos": "lábio"
+    },
+    {
+        "palavra": "BENEFICÊNCIA",
+        "sinonimos": "caridade , filantropia , humanidade , amor ao próximo , altruísmo"
+    },
+    {
+        "palavra": "BENEFÍCIO",
+        "sinonimos": "favor , graça , mercê , obséquio"
+    },
+    {
+        "palavra": "BIBLIOTECA",
+        "sinonimos": "livraria"
+    },
+    {
+        "palavra": "BISPADO",
+        "sinonimos": "episcopado , diocese , mitra"
+    },
+    {
+        "palavra": "BOIAR",
+        "sinonimos": "flutuar , sobrenadar , nadar"
+    },
+    {
+        "palavra": "BOLA",
+        "sinonimos": "globo , esfera , pelouro , bala"
+    },
+    {
+        "palavra": "BOLHA",
+        "sinonimos": "empola , borbulha , vesícula"
+    },
+    {
+        "palavra": "BORBOTÃO",
+        "sinonimos": "jorro , jacto , golfada , torrente , gorgolhão , cachão"
+    },
+    {
+        "palavra": "BORDA",
+        "sinonimos": "margem , ribeira , riba , ribança , ribanceira , beira , praia , costa"
+    },
+    {
+        "palavra": "BORDÃO",
+        "sinonimos": "pau , varapau , cajado , bastão , cacete , bengala"
+    },
+    {
+        "palavra": "BORRASCA",
+        "sinonimos": "tempestade , tormenta , refrega, temporal , aguaceiro , procela , vendaval"
+    },
+    {
+        "palavra": "BOSQUE",
+        "sinonimos": "luco, arvoredo , selva , mata , floresta, sertão , capão , capoeira , restinga , tapera"
+    },
+    {
+        "palavra": "BOSSA",
+        "sinonimos": "giba, gibosidade , corcova , corcunda , marreca"
+    },
+    {
+        "palavra": "BOTÃO",
+        "sinonimos": "gema , gomo , olho , rebento , renovo, broto"
+    },
+    {
+        "palavra": "BOTICA",
+        "sinonimos": "farmácia"
+    },
+    {
+        "palavra": "BOTIM",
+        "sinonimos": "bota, botina , sapato , calçado"
+    },
+    {
+        "palavra": "BREVE",
+        "sinonimos": "curto , conciso , lacônico , sucinto, preciso"
+    },
+    {
+        "palavra": "BRILHANTE",
+        "sinonimos": "diamante"
+    },
+    {
+        "palavra": "BRILHAR",
+        "sinonimos": "rebrilhar , luzir , reluzir , transluzir, tremeluzir , cintilar , resplandecer , esplender , resplender , fulgurar , refulgurar , fulgir , refulgir , rutilar , relampear , relumbrar , faiscar , chispar , coriscar , fuzilar , flamear , irradiar"
+    },
+    {
+        "palavra": "BRINDE",
+        "sinonimos": "presente , dádiva , donativo , dom , oferta , mimo"
+    },
+    {
+        "palavra": "BRUMA",
+        "sinonimos": "caligem , nevoeiro , névoa , nuvem , bulcão , neblina , negror , negrume , cerração, nimbo"
+    },
+    {
+        "palavra": "BURLESCO",
+        "sinonimos": "grotesco , cômico , bufo , bufão , caricato , faceto , ridículo , truanesco , extravagante"
+    },
+    {
+        "palavra": "BUSCAR",
+        "sinonimos": "procurar"
+    },
+    {
+        "palavra": "CABELEIRA",
+        "sinonimos": "cabelo , melena , grenha , guedelha , coma , madeixa , marrafa"
+    },
+    {
+        "palavra": "CABO",
+        "sinonimos": "promontório , pontal , cabedelo"
+    },
+    {
+        "palavra": "CACHOEIRA",
+        "sinonimos": "corredeira , rápido , catadupa, cascata , catarata , salto"
+    },
+    {
+        "palavra": "CADAFALSO",
+        "sinonimos": "patíbulo , forca , guilhotina"
+    },
+    {
+        "palavra": "CALADO",
+        "sinonimos": "mudo , silencioso , taciturno , quieto , reservado , sombrio"
+    },
+    {
+        "palavra": "CALCULAR",
+        "sinonimos": "computar , contar , cálculo , cômputo , conta , orçar , esmar , suputar , estimar , avaliar"
+    },
+    {
+        "palavra": "CAMINHO",
+        "sinonimos": "estrada , via, trilha , raia, vicina, carreiro , azinhaga , picada , senda , vereda, atalho"
+    },
+    {
+        "palavra": "CANSAÇO",
+        "sinonimos": "canseira , fadiga , lassidão"
+    },
+    {
+        "palavra": "CÂNTICO",
+        "sinonimos": "canto , canção , hino"
+    },
+    {
+        "palavra": "CAPCIOSO",
+        "sinonimos": "insidioso , sofístico , arguto , argucioso , ardiloso , traiçoeiro , velhaco , falaz, falacioso , subtil , astuto , astucioso , ob-reptício , sub-reptício , caviloso"
+    },
+    {
+        "palavra": "CAPITULAÇÃO",
+        "sinonimos": "rendição"
+    },
+    {
+        "palavra": "CAPÍTULO",
+        "sinonimos": "cabido"
+    },
+    {
+        "palavra": "CARA",
+        "sinonimos": "rosto , face, frente , fronte , semblante, vulto"
+    },
+    {
+        "palavra": "CARCAÇA",
+        "sinonimos": "esqueleto , arcaboiço"
+    },
+    {
+        "palavra": "CARECER",
+        "sinonimos": "precisar , necessitar"
+    },
+    {
+        "palavra": "CARESTIA",
+        "sinonimos": "careza , carência , escassez , inópia, pobreza , penúria , indigência , necessidade, miséria , sede , fome"
+    },
+    {
+        "palavra": "CARIDOSO",
+        "sinonimos": "caritativo"
+    },
+    {
+        "palavra": "CARNICEIRO",
+        "sinonimos": "carnívoro"
+    },
+    {
+        "palavra": "CARTA",
+        "sinonimos": "epístola , missiva , bilhete"
+    },
+    {
+        "palavra": "CASA",
+        "sinonimos": "morada , vivenda , palácio , palacete , tugúrio , teto , chalé , lar, fogo , canto , palheiro , palhoça , choupana , casebre , cabana, tenda , barraca , arribana , choça , colmo , habitação , mansarda , pardieiro , biombo , cômodo , prédio , solar , castelo"
+    },
+    {
+        "palavra": "CASO",
+        "sinonimos": "conjuntura , circunstância , situação , suposição , hipótese"
+    },
+    {
+        "palavra": "CASTO",
+        "sinonimos": "castidade , puro , pureza , continente , continência , virgem , virgindade , intemerato , impoluto , ilibado , incorrupto , imaculado , pudico , pudicícia , inocente , inocência"
+    },
+    {
+        "palavra": "CASTIGAR",
+        "sinonimos": "punir , castigo , pena , punição"
+    },
+    {
+        "palavra": "CATIVO",
+        "sinonimos": "cativeiro , escravo , escravidão , servo , servidão , prisioneiro , prisão"
+    },
+    {
+        "palavra": "CAUSA",
+        "sinonimos": "motivo , razão , móvel , pretexto"
+    },
+    {
+        "palavra": "CEGAMENTE",
+        "sinonimos": "às cegas"
+    },
+    {
+        "palavra": "CELEBRAR",
+        "sinonimos": "solenizar , festejar , comemorar, rememorar"
+    },
+    {
+        "palavra": "CELESTE",
+        "sinonimos": "celestial , divino , divinal , célico , celígeno , deífico"
+    },
+    {
+        "palavra": "CENSURA",
+        "sinonimos": "crítica , sátira , admoestação , observação , advertência , ponderação , comentário , repreensão , arguição , recriminação, objurgatória , remoque , reproche , exprobração , reprimenda"
+    },
+    {
+        "palavra": "CHAMA",
+        "sinonimos": "flama , labareda , fogueira , incêndio , lume , fogo , faísca , fagulha , chispa , centelha"
+    },
+    {
+        "palavra": "CHAMARIZ",
+        "sinonimos": "engodo , reclamo , isca, negaça, atrativo"
+    },
+    {
+        "palavra": "CHAPADA",
+        "sinonimos": "planura , planalto , esplanada , planície"
+    },
+    {
+        "palavra": "CHEIA",
+        "sinonimos": "inundação , enchente , dilúvio"
+    },
+    {
+        "palavra": "CHISTOSO",
+        "sinonimos": "gracioso , espirituoso , faceto , engraçado , pilhérico , folgazão , trocista"
+    },
+    {
+        "palavra": "CHOCAR",
+        "sinonimos": "melindrar , ofender"
+    },
+    {
+        "palavra": "CHOQUE",
+        "sinonimos": "embate , conflito , encontro , contraste"
+    },
+    {
+        "palavra": "CHORAR",
+        "sinonimos": "prantear , carpir , lamentar , gemer, lagrimar , soluçar"
+    },
+    {
+        "palavra": "CIDADELA",
+        "sinonimos": "fortaleza , forte , castelo, praça , cidade fortificada"
+    },
+    {
+        "palavra": "CIFRA",
+        "sinonimos": "zero , nada"
+    },
+    {
+        "palavra": "CIGANO",
+        "sinonimos": "boêmio , vagabundo , valdevino , ambulante , nômade , zíngaro"
+    },
+    {
+        "palavra": "CIMENTAR",
+        "sinonimos": "consolidar , firmar , prender , fixar, fortalecer"
+    },
+    {
+        "palavra": "CÍNICO",
+        "sinonimos": "impudente , descarado , desvergonhado , despudorado , impudico , safado , patife , canalha , reles , deslavado , safardana , asqueroso , hediondo, sujo , sórdido , imundo , repugnante , repulsivo , repelente , desfaçado"
+    },
+    {
+        "palavra": "CINGIR",
+        "sinonimos": "rodear , cercar , apertar , circular , abraçar , circundar , abarcar"
+    },
+    {
+        "palavra": "CINZELAR",
+        "sinonimos": "burilar , esculpir , gravar , entalhar, lavrar , lavorar , lavorear , imprimir"
+    },
+    {
+        "palavra": "CIRCUNLOCUÇÃO",
+        "sinonimos": "circunlóquio , perífrase"
+    },
+    {
+        "palavra": "CIÚME",
+        "sinonimos": "zelo , inveja , ciumento , cioso , zeloso, invejoso"
+    },
+    {
+        "palavra": "CÍVEL",
+        "sinonimos": "civil"
+    },
+    {
+        "palavra": "CIVIL",
+        "sinonimos": "cívico"
+    },
+    {
+        "palavra": "CIVILIZAÇÃO",
+        "sinonimos": "cultura , polícia , instrução , ilustração"
+    },
+    {
+        "palavra": "CIVISMO",
+        "sinonimos": "patriotismo , cívico , patriótico"
+    },
+    {
+        "palavra": "CLARÃO",
+        "sinonimos": "claridade , luz, lume , luar , brilho, fulgor , esplendor , lampejo"
+    },
+    {
+        "palavra": "CLAREZA",
+        "sinonimos": "claridade , perspicuidade"
+    },
+    {
+        "palavra": "CLARO",
+        "sinonimos": "diáfano , transparente , translúcido, perspícuo"
+    },
+    {
+        "palavra": "CLASSE",
+        "sinonimos": "ordem , família , gênero , espécie , sorte , grupo , variedade , secção , ramo , série, divisão , tipo"
+    },
+    {
+        "palavra": "CLASSIFICAR",
+        "sinonimos": "ordenar , coordenar , arranjar, dispor , distribuir , separar"
+    },
+    {
+        "palavra": "CLEMÊNCIA",
+        "sinonimos": "misericórdia , piedade , compaixão , caridade , dó, pena , miseração , comiseração , indulgência , inocência , benignidade , bondade , tolerância , humanidade"
+    },
+    {
+        "palavra": "CLIENTE",
+        "sinonimos": "constituinte , comitente"
+    },
+    {
+        "palavra": "CLÍNICA",
+        "sinonimos": "clientela"
+    },
+    {
+        "palavra": "COAGIR",
+        "sinonimos": "constranger , forçar , obrigar , violentar"
+    },
+    {
+        "palavra": "COETÂNEO",
+        "sinonimos": "coevo , contemporâneo"
+    },
+    {
+        "palavra": "COLEGA",
+        "sinonimos": "confrade , coirmão , companheiro, camarada , consócio"
+    },
+    {
+        "palavra": "COLOSSAL",
+        "sinonimos": "gigantesco , enorme , desabalado, monstruoso"
+    },
+    {
+        "palavra": "COLUNA",
+        "sinonimos": "pilar , pilastra , esteio , pedestal , fulcro , base, soco , supedâneo , peanha , sustentáculo , estaca , escora , suporte"
+    },
+    {
+        "palavra": "COMA",
+        "sinonimos": "modorra , sopor , letargia , torpor , sonolência"
+    },
+    {
+        "palavra": "COMANDO",
+        "sinonimos": "mando , direção , ordem , autoridade , governo"
+    },
+    {
+        "palavra": "COMEÇAR",
+        "sinonimos": "principiar"
+    },
+    {
+        "palavra": "COMERCIANTE",
+        "sinonimos": "negociante , mercador , marchante , traficante , tratante , chatim"
+    },
+    {
+        "palavra": "COMETER",
+        "sinonimos": "praticar , perpetrar , fazer"
+    },
+    {
+        "palavra": "COMETIMENTO",
+        "sinonimos": "empresa , empreendimento"
+    },
+    {
+        "palavra": "COMILÃO",
+        "sinonimos": "glutão , guloso , faminto , voraz"
+    },
+    {
+        "palavra": "COMO",
+        "sinonimos": "assim como , do mesmo modo que"
+    },
+    {
+        "palavra": "COMPACTO",
+        "sinonimos": "espesso , denso"
+    },
+    {
+        "palavra": "COMPANHIA",
+        "sinonimos": "sociedade , sindicato , associação"
+    },
+    {
+        "palavra": "COMPARAR",
+        "sinonimos": "confrontar , conferir , colacionar, cotejar"
+    },
+    {
+        "palavra": "COMPARTIR",
+        "sinonimos": "compartilhar , partilhar , participar"
+    },
+    {
+        "palavra": "COMPASSADO",
+        "sinonimos": "lento , vagaroso , tardio , tardígrado , tardo , pesado , moroso , demorado , ronceiro , pachorrento , zorreiro , fleumático"
+    },
+    {
+        "palavra": "COMPATRIOTA",
+        "sinonimos": "compatrício , patrício , concidadão , conterrâneo"
+    },
+    {
+        "palavra": "COMPENSAR",
+        "sinonimos": "contrabalançar , igualar , equiparar , equilibrar , contrapesar"
+    },
+    {
+        "palavra": "COMPETÊNCIA",
+        "sinonimos": "capacidade"
+    },
+    {
+        "palavra": "COMPETENTE",
+        "sinonimos": "respetivo , próprio , adequado"
+    },
+    {
+        "palavra": "COMPETIR",
+        "sinonimos": "rivalizar , concorrer , emular"
+    },
+    {
+        "palavra": "COMPLEMENTO",
+        "sinonimos": "suplemento , implemento, completação , acabamento , conclusão"
+    },
+    {
+        "palavra": "COMPLEXO",
+        "sinonimos": "complicado , implexo , implicado"
+    },
+    {
+        "palavra": "COMPREENDER",
+        "sinonimos": "entender , conceber , perceber , sentir"
+    },
+    {
+        "palavra": "COMUM",
+        "sinonimos": "público , geral"
+    },
+    {
+        "palavra": "COMUMENTE",
+        "sinonimos": "ordinariamente , de ordinário , geralmente , de regra"
+    },
+    {
+        "palavra": "COMUNA",
+        "sinonimos": "município , concelho"
+    },
+    {
+        "palavra": "CONCEDER",
+        "sinonimos": "outorgar"
+    },
+    {
+        "palavra": "CONCEITO",
+        "sinonimos": "opinião , juízo"
+    },
+    {
+        "palavra": "CONCEPÇÃO",
+        "sinonimos": "inteligência , entendimento, mente , compreensão , intelecto , razão , juízo, senso , bom senso , apercepção , espírito, gênio"
+    },
+    {
+        "palavra": "CONCITAR",
+        "sinonimos": "instigar , açular , insuflar , induzir , provocar"
+    },
+    {
+        "palavra": "CONCLUIR",
+        "sinonimos": "inferir , induzir , deduzir , coligir"
+    },
+    {
+        "palavra": "CONCLUSÃO",
+        "sinonimos": "consequência , indução , dedução , ilação , inferência"
+    },
+    {
+        "palavra": "CONCUPISCÊNCIA",
+        "sinonimos": "luxúria , lascívia , lubricidade , libidinagem , volúpia , sensualidade, moleza , voluptuosidade"
+    },
+    {
+        "palavra": "CONFERÊNCIA",
+        "sinonimos": "entrevista"
+    },
+    {
+        "palavra": "CONFIANÇA",
+        "sinonimos": "segurança , seguridade"
+    },
+    {
+        "palavra": "CONFIGURAÇÃO",
+        "sinonimos": "conformação , figura , forma"
+    },
+    {
+        "palavra": "CONFISCAR",
+        "sinonimos": "apreender , arrestar , embargar, sequestrar , penhorar , apenar"
+    },
+    {
+        "palavra": "CONFORME",
+        "sinonimos": "segundo"
+    },
+    {
+        "palavra": "CONFORTAR",
+        "sinonimos": "consolar"
+    },
+    {
+        "palavra": "CONFRARIA",
+        "sinonimos": "ordem , irmandade , congregação"
+    },
+    {
+        "palavra": "CONFUTAR",
+        "sinonimos": "refutar , impugnar , rebater"
+    },
+    {
+        "palavra": "CONJUGAL",
+        "sinonimos": "nupcial , matrimonial"
+    },
+    {
+        "palavra": "CONSAGRAR",
+        "sinonimos": "dedicar , oferecer , votar"
+    },
+    {
+        "palavra": "CONJURAÇÃO",
+        "sinonimos": "conspiração , intriga , cabala, enredo , trama , conluio , mexerico"
+    },
+    {
+        "palavra": "CONSTRUIR",
+        "sinonimos": "edificar , fabricar , fazer"
+    },
+    {
+        "palavra": "CONSTANTE",
+        "sinonimos": "firme , forte, inabalável , inflexível , tenaz , persistente , obstinado , teimoso , inalterável , fiel, perseverante , leal, constância , firmeza , fortaleza , fidelidade , perseverança , lealdade , persistência , tenacidade , obstinação , teimosia"
+    },
+    {
+        "palavra": "CONTRIBUIÇÃO",
+        "sinonimos": "imposto , tributo , derrama , páreas , subsídios , direitos , taxa, finta"
+    },
+    {
+        "palavra": "CONVENIENTE",
+        "sinonimos": "decente , decoroso , honesto , discreto"
+    },
+    {
+        "palavra": "CONVERSAÇÃO",
+        "sinonimos": "conversa , conferência , colóquio , palestra , prosa , cavaco , cavaquei-ra, diálogo , confabulação"
+    },
+    {
+        "palavra": "CONVICÇÃO",
+        "sinonimos": "persuasão"
+    },
+    {
+        "palavra": "CONVINCENTE",
+        "sinonimos": "evidente , certo , indubitável , incontestável , persuasivo , persu-asório , suasório"
+    },
+    {
+        "palavra": "CONVIR",
+        "sinonimos": "importar , relevar , cumprir"
+    },
+    {
+        "palavra": "COONESTAR",
+        "sinonimos": "justificar"
+    },
+    {
+        "palavra": "COOPERAR",
+        "sinonimos": "colaborar"
+    },
+    {
+        "palavra": "COPIAR",
+        "sinonimos": "trasladar , transcrever , colar , decalcar , plagiar"
+    },
+    {
+        "palavra": "COPIOSO",
+        "sinonimos": "abundante , muito , numeroso"
+    },
+    {
+        "palavra": "COROA",
+        "sinonimos": "diadema"
+    },
+    {
+        "palavra": "CORRETO",
+        "sinonimos": "exato , perfeito , castiço , vernáculo , puro , clássico , lídimo , correção , exatidão , perfeição , casticidade , vernaculidade, pureza , classicismo , lidimidade"
+    },
+    {
+        "palavra": "CORTE",
+        "sinonimos": "fio, gume"
+    },
+    {
+        "palavra": "COSMOGONIA",
+        "sinonimos": "cosmografia , cosmologia"
+    },
+    {
+        "palavra": "COSTUME",
+        "sinonimos": "hábito , uso, rotina"
+    },
+    {
+        "palavra": "CRASSO",
+        "sinonimos": "grosseiro , palmar"
+    },
+    {
+        "palavra": "CRIAR",
+        "sinonimos": "produzir , gerar"
+    },
+    {
+        "palavra": "CREBRO",
+        "sinonimos": "frequente , repetido , reiterado"
+    },
+    {
+        "palavra": "CRENÇA",
+        "sinonimos": "fé, opinião"
+    },
+    {
+        "palavra": "CRER",
+        "sinonimos": "pensar , julgar , presumir , supor , cuidar"
+    },
+    {
+        "palavra": "CRESTOMATIA",
+        "sinonimos": "seleta , antologia , florilégio, coleção , coletânea , polianteia , silva, miscelânea , catalecto , analecto"
+    },
+    {
+        "palavra": "CULTIVO",
+        "sinonimos": "cultura"
+    },
+    {
+        "palavra": "CUMPRIR",
+        "sinonimos": "observar , guardar"
+    },
+    {
+        "palavra": "DAMA",
+        "sinonimos": "mulher , dona, matrona , senhora"
+    },
+    {
+        "palavra": "DANOSO",
+        "sinonimos": "prejudicial , nocivo , pernicioso , lesivo , perigoso , maléfico , ruinoso"
+    },
+    {
+        "palavra": "DAR",
+        "sinonimos": "doar , oferecer , apresentar , entregar"
+    },
+    {
+        "palavra": "DEBUXO",
+        "sinonimos": "esboço , bosquejo , risco , delineação , delineamento , figura, plano , planta , traçado , projeto , desenho, modelo , molde , ideia, escorço"
+    },
+    {
+        "palavra": "DECAIR",
+        "sinonimos": "descair"
+    },
+    {
+        "palavra": "DECAPITAR",
+        "sinonimos": "degolar , guilhotinar , descabeçar"
+    },
+    {
+        "palavra": "DECORO",
+        "sinonimos": "dignidade , honra , decência , reserva , recato , gravidade , pudor , vergonha , compostura"
+    },
+    {
+        "palavra": "DECEPÇÃO",
+        "sinonimos": "surpresa , engano , logro , ilusão, codilho"
+    },
+    {
+        "palavra": "DECLARAR",
+        "sinonimos": "descobrir , manifestar , revelar, divulgar , publicar , promulgar , anunciar, noticiar , desvendar , expor , patentear , explicar , enunciar , expressar , referir , relatar, narrar , contar , mostrar , proclamar , espalhar , assoalhar , apregoar , propagar , propalar"
+    },
+    {
+        "palavra": "DECOMPOR",
+        "sinonimos": "analisar , anatomizar , examinar, dissecar , destrinçar , esmiuçar , escalpelar"
+    },
+    {
+        "palavra": "DECRETO",
+        "sinonimos": "lei, aviso , resolução"
+    },
+    {
+        "palavra": "DEFEITO",
+        "sinonimos": "deformidade , imperfeição , vício, falha , balda , pecha , sestro , manha , mania , tacha , falta , eiva, senão , fraco"
+    },
+    {
+        "palavra": "DEFENDER",
+        "sinonimos": "proibir , vedar , impedir , inibir, obstar , interdizer , interditar , estorvar , embaraçar , dificultar , tolher , impossibilitar"
+    },
+    {
+        "palavra": "DELIBERAR",
+        "sinonimos": "decidir , resolver , opinar , votar"
+    },
+    {
+        "palavra": "DELICADO",
+        "sinonimos": "fino, tênue , subtil , leve, delicadeza , finura , fineza , subtileza"
+    },
+    {
+        "palavra": "DELINQUENTE",
+        "sinonimos": "criminoso , réu, acusado , indiciado , culpado , infractor , transgressor , violador , pecador , crime , delito , infração , transgressão , violação , culpa"
+    },
+    {
+        "palavra": "DEPOIS",
+        "sinonimos": "logo"
+    },
+    {
+        "palavra": "DEPOR",
+        "sinonimos": "destituir , demitir , dispensar , exonerar , despedir"
+    },
+    {
+        "palavra": "DERRAMAR",
+        "sinonimos": "entornar"
+    },
+    {
+        "palavra": "DERRETER",
+        "sinonimos": "fundir , liquefazer , dissolver , diluir , desfazer , derretimento , fundição , liquefação , dissolução , diluição"
+    },
+    {
+        "palavra": "DERROTAR",
+        "sinonimos": "desbaratar , destroçar , desfazer, bater , destruir , exterminar , aniquilar"
+    },
+    {
+        "palavra": "DESABRIDO",
+        "sinonimos": "violento , hostil , agressivo , ríspido , áspero , rude , duro , brutal , ferino"
+    },
+    {
+        "palavra": "DESACONSELHAR",
+        "sinonimos": "dissuadir , despersuadir, desiludir , desenganar , desconvencer"
+    },
+    {
+        "palavra": "DESAFIO",
+        "sinonimos": "duelo , repto , provocação"
+    },
+    {
+        "palavra": "DESANDAR",
+        "sinonimos": "voltar , retroceder , recuar , retrogradar , tornar , retornar , regressar , volver"
+    },
+    {
+        "palavra": "DESAPEGAR",
+        "sinonimos": "despegar"
+    },
+    {
+        "palavra": "DESAPERCEBIDO",
+        "sinonimos": "despercebido"
+    },
+    {
+        "palavra": "DESARRANJAR",
+        "sinonimos": "desordenar , transtornar , desorganizar , desmanchar , desfazer , baralhar, confundir , desconcertar , desconchavar, barafundar"
+    },
+    {
+        "palavra": "DESARRUGAR",
+        "sinonimos": "desenrugar"
+    },
+    {
+        "palavra": "DESCANSO",
+        "sinonimos": "repouso , quietação , tranquilidade , sossego , paz, serenidade, calma , placidez , bonança"
+    },
+    {
+        "palavra": "DESCONHECIDO",
+        "sinonimos": "incógnito"
+    },
+    {
+        "palavra": "DESCORADO",
+        "sinonimos": "pálido , lívido , macilento , lúrido"
+    },
+    {
+        "palavra": "DESCORTÊS",
+        "sinonimos": "incivil , grosseiro , desatencioso , tosco , impolido , impolítico , indelicado , inurbano , rústico"
+    },
+    {
+        "palavra": "DESCULPA",
+        "sinonimos": "escusa , recusa , perdão"
+    },
+    {
+        "palavra": "DESERTO",
+        "sinonimos": "ermo , solidão , retiro , isolamento , recanto , descampado"
+    },
+    {
+        "palavra": "DESERTOR",
+        "sinonimos": "trânsfuga"
+    },
+    {
+        "palavra": "DESERDAR",
+        "sinonimos": "exerdar"
+    },
+    {
+        "palavra": "DESIGNAR",
+        "sinonimos": "indicar , sinalar , marcar"
+    },
+    {
+        "palavra": "DESIMPEDIR",
+        "sinonimos": "desembaraçar , desobstruir , desempecer , desempeçar , desempachar , despejar , abrir , desatravancar , desencalhar , desentulhar , desentupir , desocupar"
+    },
+    {
+        "palavra": "DESPOJAR",
+        "sinonimos": "espoliar , esbulhar , desapossar, extorquir , privar"
+    },
+    {
+        "palavra": "DESQUITE",
+        "sinonimos": "divórcio , repúdio"
+    },
+    {
+        "palavra": "DESSEPULTO",
+        "sinonimos": "insepulto"
+    },
+    {
+        "palavra": "DETER",
+        "sinonimos": "sobrestar , sustar , parar , cessar , interromper"
+    },
+    {
+        "palavra": "DETRITOS",
+        "sinonimos": "resíduo , fezes , sedimento , lia, borra , escória , escorralho , restos , fécula , vasa, sarro"
+    },
+    {
+        "palavra": "DEVER",
+        "sinonimos": "obrigação"
+    },
+    {
+        "palavra": "DIABÓLICO",
+        "sinonimos": "satânico , infernal , demoníaco"
+    },
+    {
+        "palavra": "DIALECTO",
+        "sinonimos": "língua , idioma , jargão , geringonça , provincianismo , gíria , calão , patoá"
+    },
+    {
+        "palavra": "DICÇÃO",
+        "sinonimos": "elocução , estilo , vocábulo , palavra, voz, termo , expressão , frase"
+    },
+    {
+        "palavra": "DIFERENÇA",
+        "sinonimos": "distinção , dissemelhança , disparidade , desproporção , desigualdade , diversidade , variedade , distância"
+    },
+    {
+        "palavra": "DIFICULDADE",
+        "sinonimos": "obstáculo , embaraço , empecilho , estorvo , impedimento"
+    },
+    {
+        "palavra": "DIFUSO",
+        "sinonimos": "prolixo , comprido , longo , extenso"
+    },
+    {
+        "palavra": "DIGRESSÃO",
+        "sinonimos": "divagação , distração , diversão"
+    },
+    {
+        "palavra": "DILACERAR",
+        "sinonimos": "lacerar , despedaçar , espedaçar , retalhar , golpear , cortar , rasgar , romper , estilhaçar , atassalhar"
+    },
+    {
+        "palavra": "DILAPIDAR",
+        "sinonimos": "dissipar , esbanjar , prodigalizar, gastar , consumir , desperdiçar , malbaratar , desbaratar , estragar"
+    },
+    {
+        "palavra": "DIMANAR",
+        "sinonimos": "emanar , manar , fluir, efluir , defluir , correr , escorrer , estilar , gotejar , pingar , exsudar , ressudar , transudar , ressumar , escoar-se , golfar , jorrar"
+    },
+    {
+        "palavra": "DIREITO",
+        "sinonimos": "justiça"
+    },
+    {
+        "palavra": "DIRIGIR",
+        "sinonimos": "guiar , conduzir , levar"
+    },
+    {
+        "palavra": "DISCERNIMENTO",
+        "sinonimos": "juízo , critério , tino , consciência , inteligência , sentido , senso , perspicácia , sagacidade"
+    },
+    {
+        "palavra": "DISERTO",
+        "sinonimos": "elegante , eloquente , facundo , claro, expressivo , brilhante"
+    },
+    {
+        "palavra": "DISPENDIOSO",
+        "sinonimos": "custoso , caro"
+    },
+    {
+        "palavra": "DISPENSA",
+        "sinonimos": "licença , escusa , isenção , imunidade , liberdade , direito , regalia, prerrogativa , privilégio , franquia"
+    },
+    {
+        "palavra": "DISSEMINAR",
+        "sinonimos": "semear , espalhar , difundir, derramar , distribuir"
+    },
+    {
+        "palavra": "DITAME",
+        "sinonimos": "conselho , parecer , opinião , voto"
+    },
+    {
+        "palavra": "DIVIDIR",
+        "sinonimos": "repartir"
+    },
+    {
+        "palavra": "DIVISA",
+        "sinonimos": "emblema , símbolo , empresa , tenção , insígnia , distintivo , lema , signo , sinal, brasão"
+    },
+    {
+        "palavra": "DÓCIL",
+        "sinonimos": "obediente , manso , pacífico , brando, submisso , flexível , doce, tratável , macio, meigo , suave , docilidade , obediência , mansidão , brandura , submissão , flexibilidade , doçura , macieza , meiguice , suavidade"
+    },
+    {
+        "palavra": "DOMICÍLIO",
+        "sinonimos": "morada , residência, estada , detença , permanência, assistência , demora , parada"
+    },
+    {
+        "palavra": "DONO",
+        "sinonimos": "proprietário , senhor , detentor , possuidor , retentor , domínio , propriedade , senhorio , detenção , posse , possessão , retenção"
+    },
+    {
+        "palavra": "DONZELA",
+        "sinonimos": "moça , rapariga , menina"
+    },
+    {
+        "palavra": "DOUTO",
+        "sinonimos": "erudito , sábio , instruído , ilustrado , versado , sabedor , sapiente , esclarecido , culto , perito"
+    },
+    {
+        "palavra": "DURAÇÃO",
+        "sinonimos": "tempo , eternidade"
+    },
+    {
+        "palavra": "EBULIÇÃO",
+        "sinonimos": "fervura , efervescência , fervor , fermentação"
+    },
+    {
+        "palavra": "EÇA",
+        "sinonimos": "cenotáfio , catafalco"
+    },
+    {
+        "palavra": "EDITOR",
+        "sinonimos": "impressor , edição , impressão , publicação"
+    },
+    {
+        "palavra": "EDUCAÇÃO",
+        "sinonimos": "criação , instrução , ilustração, civilização"
+    },
+    {
+        "palavra": "EFETUAR",
+        "sinonimos": "realizar , fazer, executar"
+    },
+    {
+        "palavra": "EFÍGIE",
+        "sinonimos": "retrato , cópia , fotografia , imagem , figura"
+    },
+    {
+        "palavra": "ELEGER",
+        "sinonimos": "escolher , preferir , eleição , escolha, preferência"
+    },
+    {
+        "palavra": "EMBAIXADOR",
+        "sinonimos": "ministro , enviado , encarregado de negócios , legado , núncio , internúncio"
+    },
+    {
+        "palavra": "EMBRIÃO",
+        "sinonimos": "feto , gérmen , semente"
+    },
+    {
+        "palavra": "EMBUSTE",
+        "sinonimos": "mentira , peta , patranha , ardil, estratagema , astúcia , artifício , manha , subterfúgio , logro , enredo , laço, lábia , ronha, solércia"
+    },
+    {
+        "palavra": "ENCARECER",
+        "sinonimos": "exagerar"
+    },
+    {
+        "palavra": "ENSEJO",
+        "sinonimos": "ocasião , oportunidade , conjunção, azo"
+    },
+    {
+        "palavra": "ENTERRO",
+        "sinonimos": "enterramento , saimento , funeral , exéquias"
+    },
+    {
+        "palavra": "ENTRETER",
+        "sinonimos": "divertir , espairecer , distrair , recrear , deleitar"
+    },
+    {
+        "palavra": "ENVIAR",
+        "sinonimos": "remeter , mandar , despachar , expedir"
+    },
+    {
+        "palavra": "EPÍLOGO",
+        "sinonimos": "peroração , desenlace , desfecho , fecho , remate , final"
+    },
+    {
+        "palavra": "EQUIDADE",
+        "sinonimos": "retidão , justiça"
+    },
+    {
+        "palavra": "ERIGIR",
+        "sinonimos": "fundar , instituir , estabelecer , levantar , erguer , construir , constituir , organizar , formar"
+    },
+    {
+        "palavra": "ESCAPAR",
+        "sinonimos": "fugir , evadir , esquivar , evitar"
+    },
+    {
+        "palavra": "ESCORREGAR",
+        "sinonimos": "resvalar , deslizar"
+    },
+    {
+        "palavra": "ESCURO",
+        "sinonimos": "obscuro , sombrio , tenebroso , caliginoso"
+    },
+    {
+        "palavra": "ESCUTAR",
+        "sinonimos": "ouvir , atender"
+    },
+    {
+        "palavra": "ESFAIMADO",
+        "sinonimos": "esfomeado , faminto , femélico, famulento"
+    },
+    {
+        "palavra": "ESFALFADO",
+        "sinonimos": "extenuado , cansado , fatigado , exausto"
+    },
+    {
+        "palavra": "ESMERO",
+        "sinonimos": "capricho , apuro , primor , requinte , cuidado , asseio , limpeza , correção, alinho , gosto"
+    },
+    {
+        "palavra": "ESPANTOSO",
+        "sinonimos": "terrível , terrífico , terrificante , horrível , horrendo , horroroso , horrente , hórrido , horrífero , horrífico , horripilante , medonho , pavoroso , temeroso"
+    },
+    {
+        "palavra": "ESPECIAL",
+        "sinonimos": "particular , singular , privativo , exclusivo"
+    },
+    {
+        "palavra": "ESPERANÇA",
+        "sinonimos": "confiança , fé"
+    },
+    {
+        "palavra": "ESPIA",
+        "sinonimos": "espião , vigia, sentinela , atalaia"
+    },
+    {
+        "palavra": "ESPIAR",
+        "sinonimos": "espionar , espreitar"
+    },
+    {
+        "palavra": "ESPONTÂNEO",
+        "sinonimos": "voluntário , livre"
+    },
+    {
+        "palavra": "ESTADO",
+        "sinonimos": "nação , povo"
+    },
+    {
+        "palavra": "ETERNO",
+        "sinonimos": "perpétuo , contínuo , imortal , sempiterno , eternal , eviterno , perene , perenal"
+    },
+    {
+        "palavra": "EUMÊNIDES",
+        "sinonimos": "Fúrias"
+    },
+    {
+        "palavra": "EXECRAÇÃO",
+        "sinonimos": "maldição , imprecação , praga, execrar , maldizer , amaldiçoar , imprecar, praguejar"
+    },
+    {
+        "palavra": "EXPERIÊNCIA",
+        "sinonimos": "observação"
+    },
+    {
+        "palavra": "FACHADA",
+        "sinonimos": "frontaria , frente , frontispício"
+    },
+    {
+        "palavra": "FACULDADE",
+        "sinonimos": "poder , potência"
+    },
+    {
+        "palavra": "FALECIMENTO",
+        "sinonimos": "morte , traspasse , trânsito, passamento"
+    },
+    {
+        "palavra": "FANAL",
+        "sinonimos": "farol"
+    },
+    {
+        "palavra": "FASTIDIOSO",
+        "sinonimos": "enfadonho , tedioso , importuno"
+    },
+    {
+        "palavra": "FECUNDO",
+        "sinonimos": "fértil , úbere , ubertoso , abundante , farto , fecundidade , fertilidade , uberdade , abundância , fartura"
+    },
+    {
+        "palavra": "FELICITAÇÕES",
+        "sinonimos": "parabéns , congratulações, saudações , cumprimentos , emboras"
+    },
+    {
+        "palavra": "FELIZ",
+        "sinonimos": "ditoso , afortunado , venturoso , bem-aventurado"
+    },
+    {
+        "palavra": "FERRAMENTA",
+        "sinonimos": "instrumento , utensílios"
+    },
+    {
+        "palavra": "FINADO",
+        "sinonimos": "defunto , morto"
+    },
+    {
+        "palavra": "FLUIDO",
+        "sinonimos": "líquido"
+    },
+    {
+        "palavra": "FRANCO",
+        "sinonimos": "sincero , leal"
+    },
+    {
+        "palavra": "FRAUDULENTO",
+        "sinonimos": "doloso , fraude , dolo"
+    },
+    {
+        "palavra": "FÚTIL",
+        "sinonimos": "frívolo"
+    },
+    {
+        "palavra": "FUGA",
+        "sinonimos": "fugida"
+    },
+    {
+        "palavra": "FUNDAMENTAL",
+        "sinonimos": "básico , principal , capital"
+    },
+    {
+        "palavra": "FÚNEBRE",
+        "sinonimos": "funéreo , funeral , funerário , mortuário , exequial , feral , lúgubre , lutuoso"
+    },
+    {
+        "palavra": "FÚRIA",
+        "sinonimos": "furor , cólera , raiva , ira , insânia , sanha"
+    },
+    {
+        "palavra": "FURTO",
+        "sinonimos": "roubo , rapina , latrocínio , ladroeira, ladroíce , rapto , furtar , roubar , rapinar , raptar , peculato , estelionato , plágio"
+    },
+    {
+        "palavra": "FUTURO",
+        "sinonimos": "vindoiro , porvindoiro , póstero , porvir"
+    },
+    {
+        "palavra": "GALARDÃO",
+        "sinonimos": "prêmio , recompensa , gratificação"
+    },
+    {
+        "palavra": "GANÂNCIA",
+        "sinonimos": "ganho , lucro , interesse"
+    },
+    {
+        "palavra": "GENERALIZAÇÃO",
+        "sinonimos": "abstração"
+    },
+    {
+        "palavra": "GERAL",
+        "sinonimos": "universal"
+    },
+    {
+        "palavra": "GLÓRIA",
+        "sinonimos": "honra , celebridade , fama, renome, nomeada , reputação , crédito , conceito, lustre , distinção"
+    },
+    {
+        "palavra": "GOZO",
+        "sinonimos": "gosto , sabor , paladar , ressaibo , ranço"
+    },
+    {
+        "palavra": "GRADAÇÃO",
+        "sinonimos": "graduação"
+    },
+    {
+        "palavra": "GRANDÍSSIMO",
+        "sinonimos": "muito grande"
+    },
+    {
+        "palavra": "GRANJA",
+        "sinonimos": "quinta , chácara , casa de campo , sítio, fazenda"
+    },
+    {
+        "palavra": "GRATIDÃO",
+        "sinonimos": "reconhecimento"
+    },
+    {
+        "palavra": "GUANTE",
+        "sinonimos": "manopla , luva"
+    },
+    {
+        "palavra": "GUARDA",
+        "sinonimos": "escolta , piquete , patrulha , ronda"
+    },
+    {
+        "palavra": "HERÓI",
+        "sinonimos": "super-homem , representativo , grande homem , homem ilustre , grande , graúdo"
+    },
+    {
+        "palavra": "HISTÓRIA",
+        "sinonimos": "fastos , anais , legenda , lenda, epopeia , relação , narrativa , narração , crônica , notícia , exposição , histórico , descrição , conta , informação , apontamentos , memória , comentário , monografia , epanáforas, biografia , vida, anedota , conto , historieta , fábula , romance , novela , apólogo , alegoria , prosopopeia , parábola"
+    },
+    {
+        "palavra": "HISTORIADOR",
+        "sinonimos": "historiógrafo"
+    },
+    {
+        "palavra": "HUMILDADE",
+        "sinonimos": "humilhação"
+    },
+    {
+        "palavra": "IDEAL",
+        "sinonimos": "imaginário"
+    },
+    {
+        "palavra": "IGNOMÍNIA",
+        "sinonimos": "infâmia , opróbrio , desonra , vergonha"
+    },
+    {
+        "palavra": "IGUARIA",
+        "sinonimos": "acepipe , manjar , pitéu, guloseima , gulosina , gulodice , gulosice , guisado , petisco"
+    },
+    {
+        "palavra": "IMOLAR",
+        "sinonimos": "sacrificar , imolação , sacrifício , holocausto"
+    },
+    {
+        "palavra": "IMPARCIAL",
+        "sinonimos": "neutro , neutral , indiferente , reto, justo, justiceiro , justiçoso"
+    },
+    {
+        "palavra": "INAPTIDÃO",
+        "sinonimos": "incapacidade , insuficiência"
+    },
+    {
+        "palavra": "INCÓLUME",
+        "sinonimos": "ileso"
+    },
+    {
+        "palavra": "INCONSTANTE",
+        "sinonimos": "volúvel"
+    },
+    {
+        "palavra": "INDIFERENÇA",
+        "sinonimos": "insensibilidade , indolência, apatia , impassibilidade , inexcitabilidade"
+    },
+    {
+        "palavra": "INDIVÍDUO",
+        "sinonimos": "pessoa"
+    },
+    {
+        "palavra": "INDIZÍVEL",
+        "sinonimos": "inexprimível , inefável"
+    },
+    {
+        "palavra": "INFÂNCIA",
+        "sinonimos": "puerícia , meninice , infantilidades , puerilidades , meninices , infante , menino , criança , pequeno , infantil , pueril"
+    },
+    {
+        "palavra": "INFORMAÇÃO",
+        "sinonimos": "inquérito , perquisição , pesquisação , devassa , inquirição , indagação , investigação , sindicância"
+    },
+    {
+        "palavra": "INSERIR",
+        "sinonimos": "encaixar , intercalar , interpor , introduzir , interpolar"
+    },
+    {
+        "palavra": "INSÍPIDO",
+        "sinonimos": "insosso , insulso"
+    },
+    {
+        "palavra": "INSÓLITO",
+        "sinonimos": "desusado , desacostumado , estranho"
+    },
+    {
+        "palavra": "INSTANTE",
+        "sinonimos": "momento"
+    },
+    {
+        "palavra": "INTERIOR",
+        "sinonimos": "interno , íntimo , intrínseco , próprio , inerente , essencial , inseparável"
+    },
+    {
+        "palavra": "JAMAIS",
+        "sinonimos": "nunca"
+    },
+    {
+        "palavra": "JURA",
+        "sinonimos": "juramento , protesto , promessa , afirmação"
+    },
+    {
+        "palavra": "JUSTA",
+        "sinonimos": "torneio , certame"
+    },
+    {
+        "palavra": "LARGUEZA",
+        "sinonimos": "largura"
+    },
+    {
+        "palavra": "LEGAL",
+        "sinonimos": "legítimo , lícito , permitido"
+    },
+    {
+        "palavra": "LIMAR",
+        "sinonimos": "polir, brunir"
+    },
+    {
+        "palavra": "LINGUISTA",
+        "sinonimos": "filólogo , gramático"
+    },
+    {
+        "palavra": "LONGÍNQUO",
+        "sinonimos": "remoto , distante"
+    },
+    {
+        "palavra": "MAQUINAR",
+        "sinonimos": "urdir , tecer, tramar , forjar , forjicar , traçar"
+    },
+    {
+        "palavra": "MANANCIAL",
+        "sinonimos": "fonte , nascente , manadeiro , nascença , origem"
+    },
+    {
+        "palavra": "MAR",
+        "sinonimos": "oceano"
+    },
+    {
+        "palavra": "MAS",
+        "sinonimos": "porém"
+    },
+    {
+        "palavra": "MASMORRA",
+        "sinonimos": "calabouço , enxovia , cadeia , prisão , cárcere , ergástulo , aljube"
+    },
+    {
+        "palavra": "MATERNAL",
+        "sinonimos": "materno , paternal , paterno , fraternal , fraterno"
+    },
+    {
+        "palavra": "MATINAL",
+        "sinonimos": "matutino"
+    },
+    {
+        "palavra": "MEDICAMENTO",
+        "sinonimos": "remédio"
+    },
+    {
+        "palavra": "MEMÓRIA",
+        "sinonimos": "lembrança , recordação , reminiscência , retentiva"
+    },
+    {
+        "palavra": "MENDIGO",
+        "sinonimos": "mendicidade , mendicância , indigente , indigência , pobre , pobreza"
+    },
+    {
+        "palavra": "MERCADORIA",
+        "sinonimos": "mercancia"
+    },
+    {
+        "palavra": "MESSE",
+        "sinonimos": "seara , ceifa, colheita"
+    },
+    {
+        "palavra": "MILAGRE",
+        "sinonimos": "prodígio , maravilha"
+    },
+    {
+        "palavra": "MÍSTICO",
+        "sinonimos": "espiritual , misticismo , misticidade , espiritualismo , espiritualidade"
+    },
+    {
+        "palavra": "MODA",
+        "sinonimos": "uso, voga"
+    },
+    {
+        "palavra": "MODISMO",
+        "sinonimos": "idiotismo"
+    },
+    {
+        "palavra": "MONACAL",
+        "sinonimos": "monástico"
+    },
+    {
+        "palavra": "MONÓLOGO",
+        "sinonimos": "solilóquio"
+    },
+    {
+        "palavra": "MONTANHA",
+        "sinonimos": "monte , serra , serrania , cordilheira , colina , cerro , outeiro , morro , lomba , lombada"
+    },
+    {
+        "palavra": "MONTANHOSO",
+        "sinonimos": "montuoso , montanheiro, montanhês , montanhesco , montano , montaraz , montês , montesinho ou montesino, montígeno , montívago"
+    },
+    {
+        "palavra": "MUNDO",
+        "sinonimos": "universo , orbe"
+    },
+    {
+        "palavra": "MÚTUO",
+        "sinonimos": "recíproco"
+    },
+    {
+        "palavra": "NÓS",
+        "sinonimos": "nós outros"
+    },
+    {
+        "palavra": "NOTÓRIO",
+        "sinonimos": "público , manifesto"
+    },
+    {
+        "palavra": "NOVO",
+        "sinonimos": "recente"
+    },
+    {
+        "palavra": "OBLAÇÃO",
+        "sinonimos": "oferenda , oblata , oferta"
+    },
+    {
+        "palavra": "OCO",
+        "sinonimos": "vazio , côncavo , vão, vácuo"
+    },
+    {
+        "palavra": "OMITIR",
+        "sinonimos": "suprimir , cortar , elidir , eliminar, cancelar"
+    },
+    {
+        "palavra": "ONDA",
+        "sinonimos": "vaga, vagalhão , escarcéu , marouço"
+    },
+    {
+        "palavra": "ONZENA",
+        "sinonimos": "usura"
+    },
+    {
+        "palavra": "OUTREM",
+        "sinonimos": "outro"
+    },
+    {
+        "palavra": "PAGA",
+        "sinonimos": "pagamento , salário , ordenado , mensalidade , soldo , soldada , vencimentos , honorários , estipêndio , remuneração , retribuição"
+    },
+    {
+        "palavra": "PARALOGISMO",
+        "sinonimos": "sofisma"
+    },
+    {
+        "palavra": "PARELHA",
+        "sinonimos": "junta , par, casal"
+    },
+    {
+        "palavra": "PENA",
+        "sinonimos": "saudade"
+    },
+    {
+        "palavra": "PERCEPÇÃO",
+        "sinonimos": "sensação , sentimento"
+    },
+    {
+        "palavra": "PERPENDICULAR",
+        "sinonimos": "vertical"
+    },
+    {
+        "palavra": "POETA",
+        "sinonimos": "vate"
+    },
+    {
+        "palavra": "POESIA",
+        "sinonimos": "poética"
+    },
+    {
+        "palavra": "PONTÍFICE",
+        "sinonimos": "prelado , bispo , sacerdote"
+    },
+    {
+        "palavra": "PORQUE",
+        "sinonimos": "pois que , pois, que"
+    },
+    {
+        "palavra": "POSSUIR",
+        "sinonimos": "ter"
+    },
+    {
+        "palavra": "POSTERIOR",
+        "sinonimos": "ulterior , seguinte , subsequente , subsecutivo"
+    },
+    {
+        "palavra": "POSTULADO",
+        "sinonimos": "axioma"
+    },
+    {
+        "palavra": "PREÂMBULO",
+        "sinonimos": "prefácio , proêmio, prólogo , introdução , prelúdio , introito , preliminar , prolegômenos , exórdio"
+    },
+    {
+        "palavra": "PRECISAMENTE",
+        "sinonimos": "justamente , positivamente , expressamente , formalmente"
+    },
+    {
+        "palavra": "PRECOCE",
+        "sinonimos": "prematuro , temporão , antecipado"
+    },
+    {
+        "palavra": "PRIMEIRO",
+        "sinonimos": "primário , primitivo , primevo , primordial"
+    },
+    {
+        "palavra": "PROFANAÇÃO",
+        "sinonimos": "sacrilégio"
+    },
+    {
+        "palavra": "PROGÊNIE",
+        "sinonimos": "progenitura , ascendência , linhagem , estirpe , raça, casta, família , sangue, casa, geração , genealogia , prosápia , prole , origem , posteridade"
+    },
+    {
+        "palavra": "PRÓPRIO",
+        "sinonimos": "mesmo"
+    },
+    {
+        "palavra": "PULO",
+        "sinonimos": "salto, pinote , cabriola , pirueta , cambalhota , pincho"
+    },
+    {
+        "palavra": "QUANTIA",
+        "sinonimos": "soma , quantidade , número"
+    },
+    {
+        "palavra": "QUIMERA",
+        "sinonimos": "ilusão , fantasia , utopia , visão"
+    },
+    {
+        "palavra": "RADIANTE",
+        "sinonimos": "radioso , irradiante , irradiador, faiscante , cintilante , chispante , coruscante , relampejante , flamante , reluzente , flamejante , fulgente , refulgente , fulgurante, brilhante , resplandecente , resplendente, fagulhante"
+    },
+    {
+        "palavra": "RASTO",
+        "sinonimos": "vestígio , pegada , pisada , trilha , pista, rastilho , sinal, carreiro"
+    },
+    {
+        "palavra": "REAL",
+        "sinonimos": "régio , reiuno , realengo , reguengo"
+    },
+    {
+        "palavra": "REALCE",
+        "sinonimos": "relevo , destaque , evidência , saliência , proeminência , ressalto"
+    },
+    {
+        "palavra": "REALIDADE",
+        "sinonimos": "verdade"
+    },
+    {
+        "palavra": "RECIBO",
+        "sinonimos": "quitação"
+    },
+    {
+        "palavra": "REGER",
+        "sinonimos": "gerir, regente , regedor , gerente , gestor , regência , regedoria , gerência , gestão"
+    },
+    {
+        "palavra": "RESIGNAÇÃO",
+        "sinonimos": "passividade , paciência , abdicação , renunciamento"
+    },
+    {
+        "palavra": "RETINIR",
+        "sinonimos": "retumbar , ressoar , repercutir , ecoar , soar, ribombar , retroar"
+    },
+    {
+        "palavra": "REDARGUIR",
+        "sinonimos": "replicar , retorquir , retrucar , rebater , responder , objetar , obtemperar , recriminar , contrapor , opor, contestar , revidar , reenvidar , contradizer , contraditar, respingar"
+    },
+    {
+        "palavra": "REVELAÇÃO",
+        "sinonimos": "inspiração"
+    },
+    {
+        "palavra": "ROTEIRO",
+        "sinonimos": "itinerário , diário , portulânio"
+    },
+    {
+        "palavra": "SABEDORIA",
+        "sinonimos": "ciência"
+    },
+    {
+        "palavra": "SACRO",
+        "sinonimos": "sagrado , santo"
+    },
+    {
+        "palavra": "SADIO",
+        "sinonimos": "são, salutar , salubre , higiênico"
+    },
+    {
+        "palavra": "SANGRENTO",
+        "sinonimos": "sanguinolento , sanguento , sanguinoso , sanguino , sanguíneo , cruento , sanguinário , sanguissedento"
+    },
+    {
+        "palavra": "SECULAR",
+        "sinonimos": "leigo, laical"
+    },
+    {
+        "palavra": "SEGE",
+        "sinonimos": "carruagem , trem, coche , veículo , viatura , tílburi , cabriolé , carro , plaustro , faeton , caleça , caleche , cupê"
+    },
+    {
+        "palavra": "SEGREGAÇÃO",
+        "sinonimos": "segregar , secretar , secreção"
+    },
+    {
+        "palavra": "SEGUIDAMENTE",
+        "sinonimos": "ato contínuo , imediatamente , de seguida , em seguida , logo após"
+    },
+    {
+        "palavra": "SIGILO",
+        "sinonimos": "segredo , reserva"
+    },
+    {
+        "palavra": "SIMPLEZA",
+        "sinonimos": "simplicidade"
+    },
+    {
+        "palavra": "SISTEMA",
+        "sinonimos": "teoria"
+    },
+    {
+        "palavra": "SOCIAL",
+        "sinonimos": "sociável"
+    },
+    {
+        "palavra": "SOPORÍFERO",
+        "sinonimos": "soporífico , soporativo , soporoso"
+    },
+    {
+        "palavra": "SÚBDITO",
+        "sinonimos": "vassalo , cidadão"
+    },
+    {
+        "palavra": "SUL",
+        "sinonimos": "meio-dia"
+    },
+    {
+        "palavra": "SUMO",
+        "sinonimos": "suco, caldo"
+    },
+    {
+        "palavra": "SUPLENTE",
+        "sinonimos": "substituto"
+    },
+    {
+        "palavra": "SURTO",
+        "sinonimos": "rapto , transporte , arroubo , voo, voadura , remígio , assomo , arrebatamento"
+    },
+    {
+        "palavra": "SUSPEITA",
+        "sinonimos": "desconfiança , cisma , receio"
+    },
+    {
+        "palavra": "TASCA",
+        "sinonimos": "taberna , venda , quiosque, baiuca , bodega , espelunca , locanda"
+    },
+    {
+        "palavra": "TEMER",
+        "sinonimos": "recear , suspeitar , desconfiar"
+    },
+    {
+        "palavra": "TEMPLO",
+        "sinonimos": "igreja , basílica , ermida , capela , delubro , fano, edícula , santuário"
+    },
+    {
+        "palavra": "TERRA",
+        "sinonimos": "terreno , solo, campo"
+    },
+    {
+        "palavra": "TEZ",
+        "sinonimos": "cútis, pele, derme , epiderme"
+    },
+    {
+        "palavra": "TÍBIO",
+        "sinonimos": "tépido , morno"
+    },
+    {
+        "palavra": "TIMBRE",
+        "sinonimos": "sinete , selo, carimbo , marca"
+    },
+    {
+        "palavra": "TOGA",
+        "sinonimos": "garnacha , beca, paludamento , trábea"
+    },
+    {
+        "palavra": "TOMO",
+        "sinonimos": "volume"
+    },
+    {
+        "palavra": "TORPE",
+        "sinonimos": "impudico , desonesto , obsceno , indecente , impuro , imoral , indecoroso , impudente , desvergonhado , descarado , desfaçado"
+    },
+    {
+        "palavra": "TRADUÇÃO",
+        "sinonimos": "versão"
+    },
+    {
+        "palavra": "TRAGO",
+        "sinonimos": "sorvo , gole, hausto"
+    },
+    {
+        "palavra": "TRAJO",
+        "sinonimos": "vestimenta , vestidura , vestido , veste, roupa , fato, indumento"
+    },
+    {
+        "palavra": "TRISTEZA",
+        "sinonimos": "tristura"
+    },
+    {
+        "palavra": "TRIUNFAL",
+        "sinonimos": "triunfante"
+    },
+    {
+        "palavra": "TRUNCAR",
+        "sinonimos": "mutilar"
+    },
+    {
+        "palavra": "TÚNICA",
+        "sinonimos": "tunicela , casula , dalmática"
+    },
+    {
+        "palavra": "TURNO",
+        "sinonimos": "vez"
+    },
+    {
+        "palavra": "ÚLCERA",
+        "sinonimos": "chaga , ferida"
+    },
+    {
+        "palavra": "UM",
+        "sinonimos": "único , só, singular"
+    },
+    {
+        "palavra": "UNIÃO",
+        "sinonimos": "junção"
+    },
+    {
+        "palavra": "URGÊNCIA",
+        "sinonimos": "pressa"
+    },
+    {
+        "palavra": "ÚTIL",
+        "sinonimos": "proveitoso , conveniente, vantajoso , profícuo , utilidade , proveito , conveniência , vantagem , proficuidade"
+    },
+    {
+        "palavra": "VÃO",
+        "sinonimos": "baldado , inútil , improfícuo"
+    },
+    {
+        "palavra": "VERACIDADE",
+        "sinonimos": "veridicidade , verdade , veraz, verídico , verdadeiro"
+    },
+    {
+        "palavra": "VIAL",
+        "sinonimos": "avenida"
+    },
+    {
+        "palavra": "VIGA",
+        "sinonimos": "trave, barrote"
+    },
+    {
+        "palavra": "VIRIL",
+        "sinonimos": "varonil , homem , varão"
+    },
+    {
+        "palavra": "VITAL",
+        "sinonimos": "viável , vivaz"
+    },
+    {
+        "palavra": "VITORIOSO",
+        "sinonimos": "vencedor"
+    },
+    {
+        "palavra": "VOLIÇÃO",
+        "sinonimos": "veleidade , vontade"
+    },
+    {
+        "palavra": "ZABUMBA",
+        "sinonimos": "bombo"
+    },
+    {
+        "palavra": "ZAGAL",
+        "sinonimos": "pastor , pegureiro , alganame , maioral , zagaleto , zagalejo"
+    },
+    {
+        "palavra": "ZAROLHO",
+        "sinonimos": "vesgo , estrábico , zanaga , peto"
+    },
+    {
+        "palavra": "ZUMBAIA",
+        "sinonimos": "mesura , cortesia , rapapé , salamaleque"
+    },
+    {
+        "palavra": "ZUMBIDO",
+        "sinonimos": "zunido , zum-zum"
+    }
+]

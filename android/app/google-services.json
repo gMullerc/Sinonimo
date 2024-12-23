@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738652890862",
+    "project_id": "flutter-sinonimos-app",
+    "storage_bucket": "flutter-sinonimos-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738652890862:android:3c12bed6b422a792ee35ff",
+        "android_client_info": {
+          "package_name": "br.com.sinonimos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwlmWl7VUElTLO1cnSkrvBoGzXXoeGNlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
