@@ -1,16 +1,10 @@
-# sinonimo
+# Sinônimo
 
-A new Flutter project.
+Descrição
+Sinonimo é um jogo educativo e divertido que desafia os jogadores a encontrar sinônimos de palavras apresentadas. Teste seus conhecimentos de vocabulário no modo rápido, o único disponível no momento, e descubra quantas respostas corretas você consegue em sequência!
 
-## Getting Started
+Características Principais
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🕐 Modo Rápido: Receba uma palavra aleatória e tente acertar seu sinônimo o mais rápido possível.
+🧠 Desafio Educacional: Aprimore seu vocabulário e conhecimento de palavras em português.
+🎉 Jogue a Qualquer Momento: Um passatempo ideal para amantes de palavras!
