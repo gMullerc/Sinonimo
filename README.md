@@ -5,6 +5,6 @@ Sinonimo é um jogo educativo e divertido que desafia os jogadores a encontrar s
 
 Características Principais
 
-🕐 Modo Rápido: Receba uma palavra aleatória e tente acertar seu sinônimo o mais rápido possível.
-🧠 Desafio Educacional: Aprimore seu vocabulário e conhecimento de palavras em português.
-🎉 Jogue a Qualquer Momento: Um passatempo ideal para amantes de palavras!
+🕐 Modo Rápido: Receba uma palavra aleatória e tente acertar seu sinônimo o mais rápido possível. <br>
+🧠 Desafio Educacional: Aprimore seu vocabulário e conhecimento de palavras em português.<br>
+🎉 Jogue a Qualquer Momento: Um passatempo ideal para amantes de palavras!<br>
