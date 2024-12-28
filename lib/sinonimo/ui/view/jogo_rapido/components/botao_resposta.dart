@@ -15,9 +15,16 @@ class BotaoResposta extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        ElevatedButton(
-          onPressed: () => selecionarResposta(),
-          child: Text(sinonimo?.nome ?? ""),
+        Expanded(
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5.0),
+              ),
+            ),
+            onPressed: () => selecionarResposta(),
+            child: Text(sinonimo?.nome ?? ""),
+          ),
         ),
       ],
     );

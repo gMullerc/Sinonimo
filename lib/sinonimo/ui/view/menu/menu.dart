@@ -20,6 +20,10 @@ class _MenuState extends State<Menu> {
       body: SafeArea(
         child: Container(
           decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/fundo.png"),
+              fit: BoxFit.cover,
+            ),
             gradient: LinearGradient(
                 colors: [
                   Color.fromARGB(255, 60, 60, 60),

@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 
 import 'package:dartz/dartz.dart';
@@ -21,7 +22,18 @@ class JogoRapidoViewModel extends GetxController {
     _sinonimosRepository = sinonimosRepository;
   }
 
+  final int _tempoTotal = 60;
+  final Duration _intervalo = const Duration(milliseconds: 16);
+  late Timer? _timer;
+  late DateTime? _ultimaContagem;
+  late int tempoRestante;
+  bool _jogoIniciado = false;
+
+  int tempoAdicionalPorAcerto = 0;
+
   ValueNotifier<String?> error = ValueNotifier(null);
+
+  final ValueNotifier<double> _progressoContador = ValueNotifier(1.0);
   final ValueNotifier<int> _pontuacao = ValueNotifier(0);
   final ValueNotifier<int> _tentativas = ValueNotifier(3);
   final ValueNotifierListPalavras _palavrasIncorretas = ValueNotifier([]);
@@ -33,6 +45,7 @@ class JogoRapidoViewModel extends GetxController {
   List<Sinonimo> get sinonimos => _sinonimos.value;
   String get pontuacao => _pontuacao.value.toString();
   String get tentativas => _tentativas.value.toString();
+  double get progressoContador => _progressoContador.value;
 
   Listenable get listenable {
     return Listenable.merge([
@@ -40,6 +53,7 @@ class JogoRapidoViewModel extends GetxController {
       _palavraJogada,
       _tentativas,
       _pontuacao,
+      _progressoContador
     ]);
   }
 
@@ -47,6 +61,12 @@ class JogoRapidoViewModel extends GetxController {
   void onInit() {
     super.onInit();
     _getSinonimos();
+  }
+
+  @override
+  void onClose() {
+    _resetarTimer();
+    super.onClose();
   }
 
   void validarPalavraSelecionada(Sinonimo sinonimoSelecionado) {
@@ -65,6 +85,11 @@ class JogoRapidoViewModel extends GetxController {
     _resetarSinonimos();
     palavras.removeWhere((palavra) => palavra.id == palavraJogada?.id);
     _sortearPalavraJogada();
+
+    if (!_jogoIniciado) {
+      _jogoIniciado = true;
+      _iniciarContador();
+    }
   }
 
   Future<void> _getSinonimos() async {
@@ -80,8 +105,52 @@ class JogoRapidoViewModel extends GetxController {
     );
   }
 
+  void _iniciarContador() {
+    _ultimaContagem = DateTime.now();
+    tempoRestante = _tempoTotal * 1000;
+
+    _timer = Timer.periodic(
+      _intervalo,
+      (timer) => _realizarContagemDoTempo(timer),
+    );
+  }
+
+  _realizarContagemDoTempo(Timer timer) {
+    final DateTime dateAtual = DateTime.now();
+
+    final int tempoDecorridoEmMilisegundos =
+        dateAtual.difference(_ultimaContagem!).inMilliseconds;
+
+    _ultimaContagem = dateAtual;
+
+    tempoRestante = (tempoRestante - tempoDecorridoEmMilisegundos);
+    if (tempoRestante <= 0) {
+      _progressoContador.value = 0.0;
+      timer.cancel();
+      Get.back();
+    } else {
+      _progressoContador.value = tempoRestante / (_tempoTotal * 1000);
+    }
+  }
+
+  void _adicionarTempoPorVelocidadeClicada() {
+    if (_jogoIniciado) {
+      tempoRestante =
+          (tempoRestante + (20 * 1000)).clamp(0, _tempoTotal * 1000);
+    }
+  }
+
+  void _resetarTimer() {
+    if (_timer != null) {
+      _timer?.cancel();
+      _jogoIniciado = false;
+      _progressoContador.value = 0.0;
+    }
+  }
+
   void _acaoPalavraCorretaSelecionada() {
     _pontuacao.value += 300;
+    _adicionarTempoPorVelocidadeClicada();
   }
 
   void _acaoPalavraIncorretaSelecionada() {
@@ -122,6 +191,7 @@ class JogoRapidoViewModel extends GetxController {
     sinonimos.add(palavraJogada.sinonimos[indexSinonimoCorreto]);
 
     _palavraJogada.value = palavraJogada;
+    sinonimos.shuffle();
     _sinonimos.value.addAll(sinonimos);
   }
 }
