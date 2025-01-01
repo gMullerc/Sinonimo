@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sinonimo/enums/dificuldade.dart';
 import 'package:sinonimo/sinonimo/ui/binding/jogo_rapido/jogo_rapido_binding.dart';
 import 'package:sinonimo/sinonimo/ui/view/jogo_rapido/jogo_rapido.dart';
 import 'package:sinonimo/sinonimo/ui/view/menu/components/card_selecao_modo.dart';
@@ -45,9 +46,20 @@ class _MenuState extends State<Menu> {
                 CardSelecaoModo(
                   navegacao: () => Get.to(
                     () => const JogoRapido(),
-                    binding: JogoRapidoBinding(),
+                    binding:
+                        JogoRapidoBinding(dificuldade: DificuldadeEnum.dificil),
                   ),
                   titulo: "Jogo rápido",
+                  descricao:
+                      "Selecione a dificuldade e marque sua melhor pontuação",
+                ),
+                CardSelecaoModo(
+                  navegacao: () => Get.to(
+                    () => const JogoRapido(),
+                    binding:
+                        JogoRapidoBinding(dificuldade: DificuldadeEnum.facil),
+                  ),
+                  titulo: "Como jogar?",
                   descricao:
                       "Selecione a dificuldade e marque sua melhor pontuação",
                 )

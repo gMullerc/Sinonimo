@@ -9,6 +9,7 @@ import 'package:sinonimo/sinonimo/data/failure/failure.dart';
 import 'package:sinonimo/sinonimo/data/models/palavra_principal_entity.dart';
 import 'package:sinonimo/sinonimo/data/models/sinonimo_entity.dart';
 import 'package:sinonimo/sinonimo/data/repositories/sinonimos_repository.dart';
+import 'package:sinonimo/sinonimo/ui/binding/jogo_rapido/jogo_rapido_binding.dart';
 import 'package:sinonimo/sinonimo/utils/typedef.dart';
 
 typedef ValueNotifierListPalavras = ValueNotifier<List<PalavraPrincipal>>;
@@ -18,11 +19,16 @@ typedef ValueNotifierPalavra = ValueNotifier<PalavraPrincipal?>;
 class JogoRapidoViewModel extends GetxController {
   late final SinonimosRepository _sinonimosRepository;
 
-  JogoRapidoViewModel({required SinonimosRepository sinonimosRepository}) {
+  late final PresetsJogoRapido _presetsJogoRapido;
+
+  JogoRapidoViewModel({
+    required SinonimosRepository sinonimosRepository,
+    required PresetsJogoRapido presetsJogoRapido,
+  }) {
     _sinonimosRepository = sinonimosRepository;
+    _presetsJogoRapido = presetsJogoRapido;
   }
 
-  final int _tempoTotal = 60;
   final Duration _intervalo = const Duration(milliseconds: 16);
   late Timer? _timer;
   late DateTime? _ultimaContagem;
@@ -107,7 +113,7 @@ class JogoRapidoViewModel extends GetxController {
 
   void _iniciarContador() {
     _ultimaContagem = DateTime.now();
-    tempoRestante = _tempoTotal * 1000;
+    tempoRestante = _presetsJogoRapido.tempoTotal * 1000;
 
     _timer = Timer.periodic(
       _intervalo,
@@ -129,14 +135,16 @@ class JogoRapidoViewModel extends GetxController {
       timer.cancel();
       Get.back();
     } else {
-      _progressoContador.value = tempoRestante / (_tempoTotal * 1000);
+      _progressoContador.value =
+          tempoRestante / (_presetsJogoRapido.tempoTotal * 1000);
     }
   }
 
   void _adicionarTempoPorVelocidadeClicada() {
     if (_jogoIniciado) {
       tempoRestante =
-          (tempoRestante + (20 * 1000)).clamp(0, _tempoTotal * 1000);
+          (tempoRestante + (_presetsJogoRapido.tempoPorAcerto * 1000))
+              .clamp(0, _presetsJogoRapido.tempoTotal * 1000);
     }
   }
 
