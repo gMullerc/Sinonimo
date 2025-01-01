@@ -2,9 +2,9 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sinonimo/firebase_options.dart';
-import 'package:sinonimo/sinonimo/data/repositories/sinonimos_repository.dart';
-import 'package:sinonimo/sinonimo/ui/binding/menu/menu_binding.dart';
-import 'package:sinonimo/sinonimo/ui/view/menu/menu.dart';
+import 'package:sinonimo/sinonimos/common/data/repositories/sinonimo_repository.dart';
+import 'package:sinonimo/sinonimos/menu/presentation/di/menu_module.dart';
+import 'package:sinonimo/sinonimos/menu/presentation/pages/menu.dart';
 import 'package:sinonimo/theme/app_theme.dart';
 
 void main() async {
@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
-      initialBinding: MenuBinding(),
-      home: const Menu(),
+      initialBinding: MenuModule(),
+      home: const MenuPage(),
     );
   }
 }
