@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sinonimo/extensions/string_extensions.dart';
+import 'package:sinonimo/sinonimos/common/components/texto_estilizado.dart';
 import 'package:sinonimo/sinonimos/common/domain/entities/sinonimo_entity.dart';
 
 class BotaoResposta extends StatelessWidget {
@@ -24,7 +25,9 @@ class BotaoResposta extends StatelessWidget {
               ),
             ),
             onPressed: () => selecionarResposta(),
-            child: Text(sinonimo?.nome.capitalize() ?? ""),
+            child: TextoEstilizado.h3(
+              sinonimo?.nome.capitalize() ?? "",
+            ),
           ),
         ),
       ],

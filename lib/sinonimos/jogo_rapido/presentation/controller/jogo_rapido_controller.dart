@@ -10,6 +10,7 @@ import 'package:sinonimo/sinonimos/common/data/repositories/sinonimo_repository.
 import 'package:sinonimo/sinonimos/common/domain/entities/palavra_principal_entity.dart';
 import 'package:sinonimo/sinonimos/common/domain/entities/sinonimo_entity.dart';
 import 'package:sinonimo/sinonimos/common/failures/failure.dart';
+import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/informacao_final.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/presets_jogo_rapido.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/contador_usecase.dart';
 
@@ -32,9 +33,8 @@ class JogoRapidoController extends GetxController {
     _contadorUsecase = contadorUsecase;
   }
 
-  bool _jogoIniciado = false;
-
   int tempoAdicionalPorAcerto = 0;
+  bool _partidaEncerrada = false;
 
   ValueNotifier<String?> error = ValueNotifier(null);
 
@@ -70,7 +70,7 @@ class JogoRapidoController extends GetxController {
 
   @override
   void onClose() {
-    _resetarTimer();
+    _contadorUsecase.resetarTimer(progressoContador: _progressoContador);
     super.onClose();
   }
 
@@ -93,9 +93,12 @@ class JogoRapidoController extends GetxController {
     palavras.removeWhere((palavra) => palavra.id == palavraJogada?.id);
     _sortearPalavraJogada();
 
-    if (!_jogoIniciado) {
-      _jogoIniciado = true;
-      _iniciarContador();
+    if (!_contadorUsecase.jogoIniciado && !_partidaEncerrada) {
+      _contadorUsecase.setJogoIniciado = true;
+      _contadorUsecase.iniciarContador(
+        dialogDerrota: () => _mostrarDialogDerrota("Tempo esgotado!"),
+        progressoContador: _progressoContador,
+      );
     }
   }
 
@@ -112,49 +115,11 @@ class JogoRapidoController extends GetxController {
     );
   }
 
-  void _iniciarContador() {
-    _contadorUsecase.setUltimaContagem = DateTime.now();
-    _contadorUsecase.setTempoRestante = _presetsJogoRapido.tempoTotal * 1000;
-
-    _contadorUsecase.setTimer = Timer.periodic(
-      _contadorUsecase.intervalo,
-      (timer) => _realizarContagemDoTempo(timer),
-    );
-  }
-
-  _realizarContagemDoTempo(Timer timer) {
-    final DateTime dateAtual = DateTime.now();
-
-    final int tempoDecorridoEmMilisegundos =
-        dateAtual.difference(_contadorUsecase.ultimaContagem!).inMilliseconds;
-
-    _contadorUsecase.setUltimaContagem = dateAtual;
-
-    _contadorUsecase.setTempoRestante =
-        (_contadorUsecase.tempoRestante! - tempoDecorridoEmMilisegundos);
-    if (_contadorUsecase.tempoRestante! <= 0) {
-      _progressoContador.value = 0.0;
-      timer.cancel();
-      _mostrarDialogDerrota();
-    } else {
-      _progressoContador.value = _contadorUsecase.tempoRestante! /
-          (_presetsJogoRapido.tempoTotal * 1000);
-    }
-  }
-
   void _adicionarTempoPorVelocidadeClicada() {
-    if (_jogoIniciado) {
+    if (_contadorUsecase.jogoIniciado) {
       _contadorUsecase.setTempoRestante = (_contadorUsecase.tempoRestante! +
               (_presetsJogoRapido.tempoPorAcerto * 1000))
           .clamp(0, _presetsJogoRapido.tempoTotal * 1000);
-    }
-  }
-
-  void _resetarTimer() {
-    if (_contadorUsecase.timer != null) {
-      _contadorUsecase.timer?.cancel();
-      _jogoIniciado = false;
-      _progressoContador.value = 0.0;
     }
   }
 
@@ -164,8 +129,22 @@ class JogoRapidoController extends GetxController {
   }
 
   void _acaoPalavraIncorretaSelecionada() {
-    _pontuacao.value -= 300;
-    _tentativas.value -= 1;
+    if ((_pontuacao.value - 300) > 0) {
+      _pontuacao.value -= 300;
+    } else {
+      _pontuacao.value = 0;
+    }
+
+    if ((_tentativas.value - 1) > 0) {
+      _tentativas.value -= 1;
+    } else {
+      _tentativas.value = 0;
+      _partidaEncerrada = true;
+      _contadorUsecase.resetarTimer(
+        progressoContador: _progressoContador,
+      );
+      _mostrarDialogDerrota("Tentativas esgotadas");
+    }
   }
 
   void _resetarSinonimos() {
@@ -206,12 +185,19 @@ class JogoRapidoController extends GetxController {
     _sinonimos.value.addAll(sinonimos);
   }
 
-  void _mostrarDialogDerrota() {
-    Get.dialog(DialogDerrota(
-      fecharModal: () => {
-        Get.back(),
-        Get.back(),
-      },
-    ));
+  void _mostrarDialogDerrota(String mensagemDerrota) {
+    Get.dialog(
+      DialogDerrota(
+        informacaoFinal: InformacaoFinal(
+          pontuacao: _pontuacao.value,
+          tentativasRestantes: _tentativas.value,
+          mensagem: mensagemDerrota,
+        ),
+        fecharModal: () => {
+          Get.back(),
+          Get.back(),
+        },
+      ),
+    );
   }
 }

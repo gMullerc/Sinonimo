@@ -24,7 +24,9 @@ class JogoRapidoModule extends Bindings {
       ),
     );
     Get.lazyPut<ContadorUsecase>(
-      () => ContadorUsecaseImpl(),
+      () => ContadorUsecaseImpl(
+        presetsJogoRapido: PresetsJogoRapido.fromDificuldade(_dificuldade),
+      ),
     );
     Get.lazyPut<JogoRapidoController>(
       () => JogoRapidoController(

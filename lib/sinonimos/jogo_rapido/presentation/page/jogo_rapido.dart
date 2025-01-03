@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sinonimo/sinonimos/common/components/botao_escolha.dart';
+import 'package:sinonimo/sinonimos/common/components/texto_estilizado.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/presentation/controller/jogo_rapido_controller.dart';
 import 'package:sinonimo/theme/app_color.dart';
 
@@ -32,16 +33,7 @@ class _JogoRapidoState extends State<JogoRapido> {
               image: AssetImage("assets/fundo.png"),
               fit: BoxFit.cover,
             ),
-            gradient: LinearGradient(
-              colors: [
-                Color.fromARGB(255, 60, 60, 60),
-                Color.fromARGB(255, 23, 23, 23),
-              ],
-              begin: FractionalOffset.topCenter,
-              end: FractionalOffset.bottomCenter,
-              tileMode: TileMode.repeated,
-            ),
-            color: Colors.blue,
+            gradient: AppColors.backGroundGradient,
             backgroundBlendMode: BlendMode.multiply,
           ),
           child: AnimatedBuilder(
@@ -62,32 +54,17 @@ class _JogoRapidoState extends State<JogoRapido> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(
-                        children: [
-                          Text(
-                            controller.tentativas,
-                            style: const TextStyle(
-                              color: AppColors.primary,
-                              fontSize: 18,
-                            ),
-                          ),
-                        ],
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 6,
+                        ),
+                        child: TextoEstilizado.h2(controller.tentativas),
                       ),
                       Column(
                         children: [
-                          Text(
-                            controller.pontuacao,
-                            style: const TextStyle(
-                              color: AppColors.primary,
-                              fontSize: 24,
-                            ),
-                          ),
-                          Text(
+                          TextoEstilizado.h1(controller.pontuacao),
+                          TextoEstilizado.h2(
                             controller.palavraJogada?.palavra ?? "",
-                            style: const TextStyle(
-                              color: AppColors.primary,
-                              fontSize: 18,
-                            ),
                           ),
                         ],
                       ),
