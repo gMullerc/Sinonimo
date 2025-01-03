@@ -28,8 +28,8 @@ class DialogDerrota extends StatelessWidget {
             children: <Widget>[
               Column(
                 children: [
-                  TextoEstilizado.h1(informacaoFinal.mensagem),
-                  TextoEstilizado.h2(
+                  TextoEstilizado.h2(informacaoFinal.mensagem),
+                  TextoEstilizado.h3(
                     "Pontuação final: ${informacaoFinal.pontuacao}",
                   ),
                   ElevatedButton(

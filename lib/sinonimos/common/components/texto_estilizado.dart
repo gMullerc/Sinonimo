@@ -11,12 +11,13 @@ class TextoEstilizado extends StatelessWidget {
   factory TextoEstilizado.h1(
     String texto, {
     Color cor = AppColors.onPrimary,
+    FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextoEstilizado._(
       texto,
       GoogleFonts.playpenSansTextTheme().displayLarge!.copyWith(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
+            fontSize: 42,
+            fontWeight: fontWeight,
             color: cor,
           ),
     );
@@ -25,12 +26,13 @@ class TextoEstilizado extends StatelessWidget {
   factory TextoEstilizado.h2(
     String texto, {
     Color cor = AppColors.onPrimary,
+    FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextoEstilizado._(
       texto,
-      GoogleFonts.playpenSansTextTheme().displayMedium!.copyWith(
-            fontSize: 18,
-            fontWeight: FontWeight.w600,
+      GoogleFonts.playpenSansTextTheme().displayLarge!.copyWith(
+            fontSize: 24,
+            fontWeight: fontWeight,
             color: cor,
           ),
     );
@@ -39,12 +41,28 @@ class TextoEstilizado extends StatelessWidget {
   factory TextoEstilizado.h3(
     String texto, {
     Color cor = AppColors.onPrimary,
+    FontWeight fontWeight = FontWeight.w600,
+  }) {
+    return TextoEstilizado._(
+      texto,
+      GoogleFonts.playpenSansTextTheme().displayMedium!.copyWith(
+            fontSize: 18,
+            fontWeight: fontWeight,
+            color: cor,
+          ),
+    );
+  }
+
+  factory TextoEstilizado.h4(
+    String texto, {
+    Color cor = AppColors.onPrimary,
+    FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextoEstilizado._(
       texto,
       GoogleFonts.playpenSansTextTheme().displaySmall!.copyWith(
             fontSize: 14,
-            fontWeight: FontWeight.w500,
+            fontWeight: fontWeight,
             color: cor,
           ),
     );
@@ -53,12 +71,13 @@ class TextoEstilizado extends StatelessWidget {
   factory TextoEstilizado.body(
     String texto, {
     Color cor = AppColors.onPrimary,
+    FontWeight fontWeight = FontWeight.w600,
   }) {
     return TextoEstilizado._(
       texto,
       GoogleFonts.playpenSansTextTheme().bodyLarge!.copyWith(
             fontSize: 14,
-            fontWeight: FontWeight.normal,
+            fontWeight: fontWeight,
             color: cor,
           ),
     );

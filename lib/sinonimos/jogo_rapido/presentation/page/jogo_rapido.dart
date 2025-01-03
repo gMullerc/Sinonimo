@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sinonimo/sinonimos/common/components/barra_tentiva.dart';
 import 'package:sinonimo/sinonimos/common/components/botao_escolha.dart';
 import 'package:sinonimo/sinonimos/common/components/texto_estilizado.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/presentation/controller/jogo_rapido_controller.dart';
@@ -29,10 +30,6 @@ class _JogoRapidoState extends State<JogoRapido> {
           height: double.infinity,
           width: double.infinity,
           decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/fundo.png"),
-              fit: BoxFit.cover,
-            ),
             gradient: AppColors.backGroundGradient,
             backgroundBlendMode: BlendMode.multiply,
           ),
@@ -56,29 +53,43 @@ class _JogoRapidoState extends State<JogoRapido> {
                     children: [
                       Container(
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 6,
+                          horizontal: 12,
+                          vertical: 12,
                         ),
-                        child: TextoEstilizado.h2(controller.tentativas),
+                        child: TextoEstilizado.h3(controller.pontuacao),
                       ),
-                      Column(
-                        children: [
-                          TextoEstilizado.h1(controller.pontuacao),
-                          TextoEstilizado.h2(
-                            controller.palavraJogada?.palavra ?? "",
-                          ),
-                        ],
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      TextoEstilizado.h3(
+                        controller.palavraJogada?.palavra ?? "",
                       ),
                       const SizedBox(),
                     ],
                   ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 24.0),
+                    child: Center(
+                      child: BarraTentivas(
+                        totalTentativas: 3,
+                        tentativasRestantes: controller.tentativas,
+                      ),
+                    ),
+                  ),
                   const Spacer(),
                   Expanded(
-                    flex: 2,
+                    flex: 4,
                     child: Center(
                       child: ListView.builder(
                         physics: const NeverScrollableScrollPhysics(),
                         itemBuilder: (context, index) => Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 12,
+                            horizontal: 12,
+                          ),
                           child: BotaoResposta(
                             sinonimo: controller.sinonimos[index],
                             selecionarResposta: () {

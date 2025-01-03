@@ -49,7 +49,7 @@ class JogoRapidoController extends GetxController {
   PalavraPrincipalEntity? get palavraJogada => _palavraJogada.value;
   List<SinonimoEntity> get sinonimos => _sinonimos.value;
   String get pontuacao => _pontuacao.value.toString();
-  String get tentativas => _tentativas.value.toString();
+  int get tentativas => _tentativas.value;
   double get progressoContador => _progressoContador.value;
 
   Listenable get listenable {
@@ -63,7 +63,7 @@ class JogoRapidoController extends GetxController {
   }
 
   @override
-  void onInit() {
+  void onInit() async {
     super.onInit();
     _getSinonimos();
   }
@@ -71,10 +71,19 @@ class JogoRapidoController extends GetxController {
   @override
   void onClose() {
     _contadorUsecase.resetarTimer(progressoContador: _progressoContador);
+    _resetarPartidaRapida();
     super.onClose();
   }
 
-  void validarPalavraSelecionada(SinonimoEntity sinonimoSelecionado) {
+  Future<void> _resetarPartidaRapida() async {
+    _palavrasIncorretas.value = [];
+    _partidaEncerrada = false;
+    _palavras.value = [];
+    _pontuacao.value = 0;
+    _tentativas.value = 3;
+  }
+
+  void validarPalavraSelecionada(SinonimoEntity sinonimoSelecionado) async {
     List<PalavraPrincipalEntity> palavras = _palavras.value;
     List<SinonimoEntity>? sinonimosPalavraSelecionada =
         palavraJogada?.sinonimos;
@@ -91,7 +100,7 @@ class JogoRapidoController extends GetxController {
     }
     _resetarSinonimos();
     palavras.removeWhere((palavra) => palavra.id == palavraJogada?.id);
-    _sortearPalavraJogada();
+    await _sortearPalavraJogada(palavras: _palavras.value);
 
     if (!_contadorUsecase.jogoIniciado && !_partidaEncerrada) {
       _contadorUsecase.setJogoIniciado = true;
@@ -110,7 +119,7 @@ class JogoRapidoController extends GetxController {
       (left) => error.value = left.mensagemErro,
       (right) async {
         _palavras.value = right;
-        await _sortearPalavraJogada();
+        await _sortearPalavraJogada(palavras: right);
       },
     );
   }
@@ -151,38 +160,40 @@ class JogoRapidoController extends GetxController {
     _sinonimos.value.clear();
   }
 
-  Future<void> _sortearPalavraJogada() async {
+  Future<void> _sortearPalavraJogada(
+      {required List<PalavraPrincipalEntity> palavras}) async {
     final random = Random();
-    List<PalavraPrincipalEntity> palavras = _palavras.value;
-    PalavraPrincipalEntity palavraJogada =
-        palavras[random.nextInt(palavras.length)];
-    Set<PalavraPrincipalEntity> palavrasIncorretas = {};
+    if (palavras.isNotEmpty) {
+      PalavraPrincipalEntity palavraJogada =
+          palavras[random.nextInt(palavras.length)];
+      Set<PalavraPrincipalEntity> palavrasIncorretas = {};
 
-    while (palavrasIncorretas.length < 3) {
-      int indexAleatorio = random.nextInt(palavras.length);
+      while (palavrasIncorretas.length < 3) {
+        int indexAleatorio = random.nextInt(palavras.length);
 
-      PalavraPrincipalEntity palavraPrincipal = palavras[indexAleatorio];
+        PalavraPrincipalEntity palavraPrincipal = palavras[indexAleatorio];
 
-      if (palavraJogada.id != palavraPrincipal.id) {
-        palavrasIncorretas.add(palavras[random.nextInt(palavras.length)]);
+        if (palavraJogada.id != palavraPrincipal.id) {
+          palavrasIncorretas.add(palavras[random.nextInt(palavras.length)]);
+        }
       }
+
+      List<SinonimoEntity> sinonimos = [];
+
+      for (var palavra in palavrasIncorretas) {
+        int indexSinonimoAleatorio = random.nextInt(palavra.sinonimos.length);
+
+        sinonimos.add(palavra.sinonimos[indexSinonimoAleatorio]);
+      }
+
+      int indexSinonimoCorreto = random.nextInt(palavraJogada.sinonimos.length);
+
+      sinonimos.add(palavraJogada.sinonimos[indexSinonimoCorreto]);
+
+      _palavraJogada.value = palavraJogada;
+      sinonimos.shuffle();
+      _sinonimos.value.addAll(sinonimos);
     }
-
-    List<SinonimoEntity> sinonimos = [];
-
-    for (var palavra in palavrasIncorretas) {
-      int indexSinonimoAleatorio = random.nextInt(palavra.sinonimos.length);
-
-      sinonimos.add(palavra.sinonimos[indexSinonimoAleatorio]);
-    }
-
-    int indexSinonimoCorreto = random.nextInt(palavraJogada.sinonimos.length);
-
-    sinonimos.add(palavraJogada.sinonimos[indexSinonimoCorreto]);
-
-    _palavraJogada.value = palavraJogada;
-    sinonimos.shuffle();
-    _sinonimos.value.addAll(sinonimos);
   }
 
   void _mostrarDialogDerrota(String mensagemDerrota) {

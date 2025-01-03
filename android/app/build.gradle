@@ -1,23 +1,14 @@
 plugins {
     id "com.android.application"
-    // START: FlutterFire Configuration
-    id 'com.google.gms.google-services'
-    // END: FlutterFire Configuration
     id "kotlin-android"
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services'
 }
 
 android {
     namespace = "com.example.sinonimo"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
-    
-    ext {
-        compileSdkVersion = 34
-        minSdkVersion = 21
-        targetSdkVersion = 34
-    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -51,3 +42,11 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // Firebase BOM para gerenciar automaticamente as versões das dependências do Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.2.0')
+    implementation 'com.google.firebase:firebase-firestore' // Caso esteja usando Firestore
+}
+
+apply plugin: 'com.google.gms.google-services'

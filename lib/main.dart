@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sinonimo/firebase_options.dart';
+import 'package:sinonimo/sinonimos/common/components/texto_estilizado.dart';
 import 'package:sinonimo/sinonimos/common/data/repositories/sinonimo_repository.dart';
 import 'package:sinonimo/sinonimos/menu/presentation/di/menu_module.dart';
 import 'package:sinonimo/sinonimos/menu/presentation/pages/menu.dart';
@@ -98,6 +99,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            TextoEstilizado.h4("texto"),
             TextField(
               controller: _palavraController,
               decoration: const InputDecoration(labelText: "Palavra"),
