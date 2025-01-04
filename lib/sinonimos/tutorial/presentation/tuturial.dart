@@ -49,11 +49,11 @@ class _TutorialPageState extends State<TutorialPage> {
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: TextoEstilizado.h4(
-                        """ Neste jogo, você verá uma palavra na tela e o objetivo é acertar o sinônimo dela. Fique atento! Você tem um tempo limitado e um número de tentativas.
+                        """Neste jogo, você verá uma palavra na tela e o objetivo é acertar o sinônimo dela. Fique atento! Você tem um tempo limitado e um número de tentativas.
                   
-  A cada resposta correta, o tempo e a pontuação aumentam de acordo com a rapidez com que você acerta. Mas cuidado! Se errar, você perderá pontos. O jogo acaba quando o tempo se esgota ou quando você excede o limite de tentativas.
+A cada resposta correta, o tempo e a pontuação aumentam de acordo com a rapidez com que você acerta. Mas cuidado! Se errar, você perderá pontos. O jogo acaba quando o tempo se esgota ou quando você excede o limite de tentativas.
                   
-  Prepare-se, pense rápido e desafie sua mente!"""),
+Prepare-se, pense rápido e desafie sua mente!"""),
                   ),
                 ),
               ],

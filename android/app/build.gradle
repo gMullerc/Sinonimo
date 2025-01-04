@@ -43,10 +43,4 @@ flutter {
     source = "../.."
 }
 
-dependencies {
-    // Firebase BOM para gerenciar automaticamente as versões das dependências do Firebase
-    implementation platform('com.google.firebase:firebase-bom:32.2.0')
-    implementation 'com.google.firebase:firebase-firestore' // Caso esteja usando Firestore
-}
-
 apply plugin: 'com.google.gms.google-services'

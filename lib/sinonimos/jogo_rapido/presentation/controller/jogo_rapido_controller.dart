@@ -76,9 +76,7 @@ class JogoRapidoController extends GetxController {
   }
 
   Future<void> _resetarPartidaRapida() async {
-    _palavrasIncorretas.value = [];
     _partidaEncerrada = false;
-    _palavras.value = [];
     _pontuacao.value = 0;
     _tentativas.value = 3;
   }

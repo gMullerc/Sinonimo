@@ -58,13 +58,13 @@ class ContadorUsecaseImpl extends ContadorUsecase {
 
   @override
   void resetarTimer({required ValueNotifier<double> progressoContador}) {
-    if (timer != null) {
+    if (_timer != null) {
       _timer?.cancel();
       _timer = null;
-      _jogoIniciado = false;
-      _tempoRestante = 0;
-      progressoContador.value = 0.0;
     }
+    _jogoIniciado = false;
+    _tempoRestante = 0;
+    progressoContador.value = 1.0;
   }
 
   void _realizarContagemDoTempo(
