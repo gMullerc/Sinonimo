@@ -13,6 +13,7 @@ import 'package:sinonimo/sinonimos/common/failures/failure.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/informacao_final.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/presets_jogo_rapido.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/contador_usecase.dart';
+import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/escolha_usecase.dart';
 
 typedef ValueNotifierListPalavras = ValueNotifier<List<PalavraPrincipalEntity>>;
 typedef ValueNotifierListSinonimo = ValueNotifier<List<SinonimoEntity>>;
@@ -20,6 +21,8 @@ typedef ValueNotifierPalavra = ValueNotifier<PalavraPrincipalEntity?>;
 
 class JogoRapidoController extends GetxController {
   late final ContadorUsecase _contadorUsecase;
+
+  late final EscolhaUsecase _escolhaUsecase;
   late final SinonimosRepository _sinonimosRepository;
   late final PresetsJogoRapido _presetsJogoRapido;
 
@@ -27,10 +30,12 @@ class JogoRapidoController extends GetxController {
     required SinonimosRepository sinonimosRepository,
     required PresetsJogoRapido presetsJogoRapido,
     required ContadorUsecase contadorUsecase,
+    required EscolhaUsecase escolhaUsecase,
   }) {
     _sinonimosRepository = sinonimosRepository;
     _presetsJogoRapido = presetsJogoRapido;
     _contadorUsecase = contadorUsecase;
+    _escolhaUsecase = escolhaUsecase;
   }
 
   int tempoAdicionalPorAcerto = 0;
@@ -39,7 +44,7 @@ class JogoRapidoController extends GetxController {
   ValueNotifier<String?> error = ValueNotifier(null);
 
   final ValueNotifier<double> _progressoContador = ValueNotifier(1.0);
-  final ValueNotifier<int> _pontuacao = ValueNotifier(0);
+  final ValueNotifier<double> _pontuacao = ValueNotifier(0.0);
   final ValueNotifier<int> _tentativas = ValueNotifier(3);
   final ValueNotifierListPalavras _palavrasIncorretas = ValueNotifier([]);
   final ValueNotifierListPalavras _palavras = ValueNotifier([]);
@@ -51,6 +56,30 @@ class JogoRapidoController extends GetxController {
   String get pontuacao => _pontuacao.value.toString();
   int get tentativas => _tentativas.value;
   double get progressoContador => _progressoContador.value;
+
+  void setProgressoContador(double novoProgresso) {
+    if (novoProgresso != 0) {
+      _progressoContador.value = novoProgresso;
+      return;
+    }
+    _progressoContador.value = 0.0;
+  }
+
+  void setPontuacao(double novaPontuacao) {
+    if (novaPontuacao != 0.0) {
+      _pontuacao.value += novaPontuacao;
+      return;
+    }
+    _pontuacao.value = 0.0;
+  }
+
+  void setTentativas(int novaTentativa) {
+    if (novaTentativa != 0) {
+      _tentativas.value += novaTentativa;
+      return;
+    }
+    _tentativas.value = 0;
+  }
 
   Listenable get listenable {
     return Listenable.merge([
@@ -70,7 +99,8 @@ class JogoRapidoController extends GetxController {
 
   @override
   void onClose() {
-    _contadorUsecase.resetarTimer(progressoContador: _progressoContador);
+    _contadorUsecase.resetarTimer(alterarProgresso: setProgressoContador);
+    _escolhaUsecase.resetarPartidaRapida();
     _resetarPartidaRapida();
     super.onClose();
   }
@@ -92,11 +122,20 @@ class JogoRapidoController extends GetxController {
     );
 
     if (sinonimoFiltrado != null) {
-      _acaoPalavraCorretaSelecionada();
+      _escolhaUsecase.acaoPalavraCorretaSelecionada(
+        alterarPontuacao: setPontuacao,
+        adicionarTempoPorVelocidadeClicada:
+            _contadorUsecase.adicionarTempoPorVelocidadeClicada,
+      );
     } else {
-      _acaoPalavraIncorretaSelecionada();
+      _escolhaUsecase.acaoPalavraIncorretaSelecionada(
+        atualizarPontuacao: _atualizarPontuacao,
+        atualizarTentativas: _atualizarTentativas,
+      );
     }
+
     _resetarSinonimos();
+
     palavras.removeWhere((palavra) => palavra.id == palavraJogada?.id);
     await _sortearPalavraJogada(palavras: _palavras.value);
 
@@ -104,7 +143,7 @@ class JogoRapidoController extends GetxController {
       _contadorUsecase.setJogoIniciado = true;
       _contadorUsecase.iniciarContador(
         dialogDerrota: () => _mostrarDialogDerrota("Tempo esgotado!"),
-        progressoContador: _progressoContador,
+        alterarProgresso: setProgressoContador,
       );
     }
   }
@@ -122,44 +161,36 @@ class JogoRapidoController extends GetxController {
     );
   }
 
-  void _adicionarTempoPorVelocidadeClicada() {
-    if (_contadorUsecase.jogoIniciado) {
-      _contadorUsecase.setTempoRestante = (_contadorUsecase.tempoRestante! +
-              (_presetsJogoRapido.tempoPorAcerto * 1000))
-          .clamp(0, _presetsJogoRapido.tempoTotal * 1000);
-    }
+  void _atualizarPontuacao(double pontuacao) {
+    setPontuacao((_pontuacao.value - pontuacao) > 0 && _pontuacao.value != 0.0
+        ? pontuacao
+        : 0.0);
   }
 
-  void _acaoPalavraCorretaSelecionada() {
-    _pontuacao.value += 300;
-    _adicionarTempoPorVelocidadeClicada();
-  }
-
-  void _acaoPalavraIncorretaSelecionada() {
-    if ((_pontuacao.value - 300) > 0) {
-      _pontuacao.value -= 300;
-    } else {
-      _pontuacao.value = 0;
-    }
-
+  void _atualizarTentativas() {
     if ((_tentativas.value - 1) > 0) {
-      _tentativas.value -= 1;
+      setTentativas(-1);
     } else {
-      _tentativas.value = 0;
-      _partidaEncerrada = true;
-      _contadorUsecase.resetarTimer(
-        progressoContador: _progressoContador,
-      );
-      _mostrarDialogDerrota("Tentativas esgotadas");
+      _finalizarPartidaPorTentativas();
     }
+  }
+
+  void _finalizarPartidaPorTentativas() {
+    setTentativas(0);
+    _partidaEncerrada = true;
+    _contadorUsecase.resetarTimer(
+      alterarProgresso: setProgressoContador,
+    );
+    _mostrarDialogDerrota("Tentativas esgotadas");
   }
 
   void _resetarSinonimos() {
     _sinonimos.value.clear();
   }
 
-  Future<void> _sortearPalavraJogada(
-      {required List<PalavraPrincipalEntity> palavras}) async {
+  Future<void> _sortearPalavraJogada({
+    required List<PalavraPrincipalEntity> palavras,
+  }) async {
     final random = Random();
     if (palavras.isNotEmpty) {
       PalavraPrincipalEntity palavraJogada =

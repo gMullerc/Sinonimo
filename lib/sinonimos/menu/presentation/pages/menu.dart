@@ -63,14 +63,13 @@ class _MenuPageState extends State<MenuPage> {
                         navegacao: () => Get.to(
                           () => const JogoRapido(),
                           binding: JogoRapidoModule(
-                              dificuldade: DificuldadeEnum.dificil),
+                            dificuldade: DificuldadeEnum.medio,
+                          ),
                         ),
                         titulo: "Jogo rápido",
                       ),
                       CardSelecaoMenu(
-                        navegacao: () => Get.to(
-                          () => const TutorialPage(),
-                        ),
+                        navegacao: () => Get.to(() => const TutorialPage()),
                         titulo: "Como jogar",
                       )
                     ],
