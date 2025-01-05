@@ -41,9 +41,7 @@ class JogoRapidoModule extends Bindings {
     );
 
     Get.lazyPut<ContadorUsecase>(
-      () => ContadorUsecaseImpl(
-        presetsJogoRapido: PresetsJogoRapido.fromDificuldade(_dificuldade),
-      ),
+      () => ContadorUsecaseImpl(presetsJogoRapido: presetsJogoRapido),
     );
 
     Get.lazyPut<EscolhaUsecase>(
@@ -55,12 +53,12 @@ class JogoRapidoModule extends Bindings {
 
     Get.lazyPut<JogoRapidoController>(
       () => JogoRapidoController(
+        escolhaUsecase: Get.find(),
         contadorUsecase: Get.find(),
         sinonimosRepository: Get.find(),
         pontuacaoUsecase: Get.find(),
         presetsJogoRapido: presetsJogoRapido,
         dificuldade: _dificuldade,
-        escolhaUsecase: Get.find(),
       ),
     );
   }

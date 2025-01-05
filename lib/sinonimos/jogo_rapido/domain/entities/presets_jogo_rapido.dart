@@ -2,56 +2,56 @@ import 'package:sinonimo/sinonimos/common/enum/dificuldade_enum.dart';
 
 class PresetsJogoRapido {
   late final int _tempoTotal;
-  late final double _pontuacaoPorAcerto;
-  late final double _pontuacaoPorErro;
+  late final double _pontuacaoGanhaPorAcerto;
+  late final double _pontuacaoPerdidaPorErro;
   late final int _tempoPorAcerto;
   late final int _tempoEmSegundoMaximoParaBonus;
 
   int get tempoTotal => _tempoTotal;
   int get tempoEmSegundoMaximoParaBonus => _tempoEmSegundoMaximoParaBonus;
-  double get pontuacaoPorAcerto => _pontuacaoPorAcerto;
-  double get pontuacaoPerdidaPorErro => _pontuacaoPorErro;
+  double get pontuacaoPorAcerto => _pontuacaoGanhaPorAcerto;
+  double get pontuacaoPerdidaPorErro => _pontuacaoPerdidaPorErro;
   int get tempoPorAcerto => _tempoPorAcerto;
 
   PresetsJogoRapido({
-    double pontuacaoPorAcerto = 200.0,
-    double pontuacaoPorErro = 150.0,
+    double pontuacaoGanhaPorAcerto = 200.0,
+    double pontuacaoPerdidaPorErro = -120.0,
     int tempoTotal = 60,
     int tempoPorAcerto = 20,
-    int tempoEmSegundoMaximoParaBonus = 12,
+    int tempoEmSegundoMaximoParaBonus = 10,
   }) {
     _tempoTotal = tempoTotal;
-    _pontuacaoPorAcerto = pontuacaoPorAcerto;
-    _pontuacaoPorErro = pontuacaoPorErro;
+    _pontuacaoGanhaPorAcerto = pontuacaoGanhaPorAcerto;
     _tempoPorAcerto = tempoPorAcerto;
     _tempoEmSegundoMaximoParaBonus = tempoEmSegundoMaximoParaBonus;
+    _pontuacaoPerdidaPorErro = pontuacaoPerdidaPorErro;
   }
 
   factory PresetsJogoRapido.fromDificuldade(DificuldadeEnum dificuldade) {
     switch (dificuldade) {
       case DificuldadeEnum.facil:
         return PresetsJogoRapido(
-          pontuacaoPorAcerto: 200.0,
-          pontuacaoPorErro: 70.0,
-          tempoTotal: 90,
+          pontuacaoGanhaPorAcerto: 100.0,
+          tempoTotal: 50,
           tempoPorAcerto: 20,
           tempoEmSegundoMaximoParaBonus: 18,
+          pontuacaoPerdidaPorErro: -82,
         );
       case DificuldadeEnum.medio:
         return PresetsJogoRapido(
-          pontuacaoPorAcerto: 250.0,
-          pontuacaoPorErro: 70.0,
+          pontuacaoGanhaPorAcerto: 200.0,
           tempoTotal: 20,
           tempoPorAcerto: 12,
-          tempoEmSegundoMaximoParaBonus: 14,
+          tempoEmSegundoMaximoParaBonus: 12,
+          pontuacaoPerdidaPorErro: -100,
         );
       case DificuldadeEnum.dificil:
         return PresetsJogoRapido(
-          pontuacaoPorAcerto: 320.0,
-          pontuacaoPorErro: 100.0,
+          pontuacaoGanhaPorAcerto: 225.0,
           tempoTotal: 12,
           tempoPorAcerto: 07,
-          tempoEmSegundoMaximoParaBonus: 10,
+          tempoEmSegundoMaximoParaBonus: 06,
+          pontuacaoPerdidaPorErro: -125,
         );
     }
   }
