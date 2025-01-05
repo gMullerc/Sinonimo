@@ -1,5 +1,5 @@
 class InformacaoFinal {
-  final int pontuacao;
+  final double pontuacao;
   final int tentativasRestantes;
   final String mensagem;
   InformacaoFinal({
