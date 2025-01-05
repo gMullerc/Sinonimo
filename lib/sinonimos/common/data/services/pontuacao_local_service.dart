@@ -32,8 +32,6 @@ class PontuacaoLocalServiceImpl extends PontuacaoLocalService {
       orElse: () => "",
     );
 
-    final keyaa = "${key}";
-
     String? json = prefs.getString(key);
 
     if (json != null) {
@@ -47,9 +45,12 @@ class PontuacaoLocalServiceImpl extends PontuacaoLocalService {
   Future<List<Map<String, dynamic>>> buscarMelhoresPontuacoes() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    Set<String> keys = prefs.getKeys();
-
     List<Map<String, dynamic>> pontuacoes = [];
+
+    List<String> keys = prefs
+        .getKeys()
+        .where((key) => key.contains(_melhorPontuacaoKey))
+        .toList();
 
     for (var key in keys) {
       String? json = prefs.getString(key);

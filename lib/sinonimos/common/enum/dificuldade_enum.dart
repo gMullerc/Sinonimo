@@ -1,7 +1,12 @@
 enum DificuldadeEnum {
-  facil,
-  medio,
-  dificil;
+  facil(0, null),
+  medio(1600, DificuldadeEnum.facil),
+  dificil(2500, DificuldadeEnum.medio);
+
+  const DificuldadeEnum(this.pontuacaoMinima, this.dificuldadeAnterior);
+
+  final double pontuacaoMinima;
+  final DificuldadeEnum? dificuldadeAnterior;
 
   static DificuldadeEnum fromString(String value) {
     return DificuldadeEnum.values.firstWhere(

@@ -6,6 +6,7 @@ class CardSelecaoDificuldade extends StatelessWidget {
   final String titulo;
   final String descricao;
   final double? melhorPontuacao;
+  final bool faseDesbloqueada;
   final Function navegacao;
 
   const CardSelecaoDificuldade({
@@ -13,13 +14,14 @@ class CardSelecaoDificuldade extends StatelessWidget {
     required this.titulo,
     required this.descricao,
     required this.navegacao,
+    this.faseDesbloqueada = true,
     this.melhorPontuacao,
   });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => navegacao(),
+      onTap: faseDesbloqueada ? () => navegacao() : () {},
       child: FractionallySizedBox(
         alignment: Alignment.center,
         widthFactor: 0.9,
@@ -44,13 +46,16 @@ class CardSelecaoDificuldade extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       TextoEstilizado.h4(titulo),
-                      Image.asset(
-                        "assets/uil_padlock.png",
-                        fit: BoxFit.cover,
-                        height: 18,
-                        width: 18,
-                        cacheHeight: 18,
-                        cacheWidth: 18,
+                      Visibility(
+                        visible: !faseDesbloqueada,
+                        child: Image.asset(
+                          "assets/uil_padlock.png",
+                          fit: BoxFit.cover,
+                          height: 18,
+                          width: 18,
+                          cacheHeight: 18,
+                          cacheWidth: 18,
+                        ),
                       )
                     ],
                   ),

@@ -58,7 +58,7 @@ class PontuacaoRepositoryImpl extends PontuacaoRepository {
       return Right(pontuacaoModel);
     } on NotFoundException catch (e) {
       return Left(GenericFailure(e.mensagem));
-    } on Exception catch (e) {
+    } catch (e) {
       return Left(GenericFailure(e.toString()));
     }
   }
