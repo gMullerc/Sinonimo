@@ -17,19 +17,27 @@ class MenuPage extends StatefulWidget {
   State<MenuPage> createState() => _MenuPageState();
 }
 
-class _MenuPageState extends State<MenuPage> {
+class _MenuPageState extends State<MenuPage> with WidgetsBindingObserver {
   late final MenuPageController _controller;
 
   @override
   void initState() {
     _controller = Get.find<MenuPageController>();
+    WidgetsBinding.instance.addObserver(this);
     super.initState();
   }
 
   @override
   void dispose() {
     _controller.onClose();
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    _controller.controlarAudioQuandoEstadoAlterar(state);
   }
 
   @override

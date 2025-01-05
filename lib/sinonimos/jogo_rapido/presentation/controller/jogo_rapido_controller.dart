@@ -237,6 +237,8 @@ class JogoRapidoController extends GetxController {
 
   void _mostrarDialogDerrota(String mensagemDerrota) {
     Get.dialog(
+      useSafeArea: false,
+      barrierDismissible: false,
       DialogDerrota(
         informacaoFinal: InformacaoFinal(
           pontuacao: _pontuacao.value,

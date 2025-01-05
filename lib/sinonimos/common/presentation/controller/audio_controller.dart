@@ -43,8 +43,12 @@ class AudioController extends GetxController {
     _playerSonsAcao.play();
   }
 
-  Future<void> pausarMusicaFundo() async {
-    await _playerMusicaFundo.stop();
+  Future<void> pararMusicaFundo() async {
+    await _playerMusicaFundo.pause();
+  }
+
+  Future<void> retomarMusicaFundo() async {
+    await _playerMusicaFundo.play();
   }
 
   Future<void> alterarVolumeMusicaFundo(double volume) async {

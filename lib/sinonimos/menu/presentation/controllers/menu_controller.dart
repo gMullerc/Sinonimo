@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -46,6 +48,14 @@ class MenuPageController extends GetxController {
 
     if (!existeDadosLocais) {
       _sinonimosRepository.salvarSinonimosLocalmente();
+    }
+  }
+
+  void controlarAudioQuandoEstadoAlterar(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      _audioController.retomarMusicaFundo();
+    } else if (state == AppLifecycleState.paused) {
+      _audioController.pararMusicaFundo();
     }
   }
 }
