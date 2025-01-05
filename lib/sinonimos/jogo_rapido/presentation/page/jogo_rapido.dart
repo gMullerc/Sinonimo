@@ -14,12 +14,18 @@ class JogoRapido extends StatefulWidget {
 }
 
 class _JogoRapidoState extends State<JogoRapido> {
-  final controller = Get.find<JogoRapidoController>();
+  late final JogoRapidoController _controller;
 
   @override
   void dispose() {
-    controller.onClose();
+    _controller.onClose();
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    _controller = Get.find<JogoRapidoController>();
+    super.initState();
   }
 
   @override
@@ -34,7 +40,7 @@ class _JogoRapidoState extends State<JogoRapido> {
             backgroundBlendMode: BlendMode.multiply,
           ),
           child: AnimatedBuilder(
-            animation: controller.listenable,
+            animation: _controller.listenable,
             builder: (context, child) {
               return Column(
                 children: [
@@ -43,7 +49,7 @@ class _JogoRapidoState extends State<JogoRapido> {
                       Expanded(
                         child: LinearProgressIndicator(
                           minHeight: 8,
-                          value: controller.progressoContador,
+                          value: _controller.progressoContador,
                         ),
                       ),
                     ],
@@ -56,7 +62,7 @@ class _JogoRapidoState extends State<JogoRapido> {
                           horizontal: 12,
                           vertical: 12,
                         ),
-                        child: TextoEstilizado.h3(controller.pontuacao),
+                        child: TextoEstilizado.h3(_controller.pontuacao),
                       ),
                     ],
                   ),
@@ -65,7 +71,7 @@ class _JogoRapidoState extends State<JogoRapido> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       TextoEstilizado.h2(
-                        controller.palavraJogada?.palavra ?? "",
+                        _controller.palavraJogada?.palavra ?? "",
                       ),
                       const SizedBox(),
                     ],
@@ -75,7 +81,7 @@ class _JogoRapidoState extends State<JogoRapido> {
                     child: Center(
                       child: BarraTentivas(
                         totalTentativas: 3,
-                        tentativasRestantes: controller.tentativas,
+                        tentativasRestantes: _controller.tentativas,
                       ),
                     ),
                   ),
@@ -91,16 +97,16 @@ class _JogoRapidoState extends State<JogoRapido> {
                             horizontal: 12,
                           ),
                           child: BotaoResposta(
-                            sinonimo: controller.sinonimos[index],
+                            sinonimo: _controller.sinonimos[index],
                             selecionarResposta: () {
-                              controller.validarPalavraSelecionada(
-                                controller.sinonimos[index],
+                              _controller.validarPalavraSelecionada(
+                                _controller.sinonimos[index],
                               );
                             },
                           ),
                         ),
                         padding: const EdgeInsets.all(24),
-                        itemCount: controller.sinonimos.length,
+                        itemCount: _controller.sinonimos.length,
                       ),
                     ),
                   ),

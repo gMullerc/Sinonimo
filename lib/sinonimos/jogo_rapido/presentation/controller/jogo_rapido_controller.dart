@@ -8,12 +8,16 @@ import 'package:get/get.dart';
 import 'package:sinonimo/sinonimos/common/components/dialog_derrota.dart';
 import 'package:sinonimo/sinonimos/common/data/repositories/sinonimo_repository.dart';
 import 'package:sinonimo/sinonimos/common/domain/entities/palavra_principal_entity.dart';
+import 'package:sinonimo/sinonimos/common/domain/entities/pontuacao_entity.dart';
 import 'package:sinonimo/sinonimos/common/domain/entities/sinonimo_entity.dart';
+import 'package:sinonimo/sinonimos/common/enum/dificuldade_enum.dart';
+import 'package:sinonimo/sinonimos/common/enum/modo_jogo_enum.dart';
 import 'package:sinonimo/sinonimos/common/failures/failure.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/informacao_final.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/presets_jogo_rapido.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/contador_usecase.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/escolha_usecase.dart';
+import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/pontuacao_usecase.dart';
 
 typedef ValueNotifierListPalavras = ValueNotifier<List<PalavraPrincipalEntity>>;
 typedef ValueNotifierListSinonimo = ValueNotifier<List<SinonimoEntity>>;
@@ -25,17 +29,23 @@ class JogoRapidoController extends GetxController {
   late final EscolhaUsecase _escolhaUsecase;
   late final SinonimosRepository _sinonimosRepository;
   late final PresetsJogoRapido _presetsJogoRapido;
+  late final PontuacaoUsecase _pontuacaoUsecase;
+  late final DificuldadeEnum _dificuldade;
 
   JogoRapidoController({
     required SinonimosRepository sinonimosRepository,
     required PresetsJogoRapido presetsJogoRapido,
     required ContadorUsecase contadorUsecase,
     required EscolhaUsecase escolhaUsecase,
+    required PontuacaoUsecase pontuacaoUsecase,
+    required DificuldadeEnum dificuldade,
   }) {
     _sinonimosRepository = sinonimosRepository;
     _presetsJogoRapido = presetsJogoRapido;
     _contadorUsecase = contadorUsecase;
     _escolhaUsecase = escolhaUsecase;
+    _pontuacaoUsecase = pontuacaoUsecase;
+    _dificuldade = dificuldade;
   }
 
   int tempoAdicionalPorAcerto = 0;
@@ -227,16 +237,57 @@ class JogoRapidoController extends GetxController {
 
   void _mostrarDialogDerrota(String mensagemDerrota) {
     Get.dialog(
+      useSafeArea: false,
+      barrierDismissible: false,
       DialogDerrota(
         informacaoFinal: InformacaoFinal(
           pontuacao: _pontuacao.value,
           tentativasRestantes: _tentativas.value,
           mensagem: mensagemDerrota,
         ),
-        fecharModal: () => {
-          Get.back(),
-          Get.back(),
+        acaoFecharModal: () async {
+          PontuacaoEntity? melhorPontuacao = await _buscarMelhorPontuacao();
+
+          await _salvarPontuacao(melhorPontuacao);
+
+          Get.back();
+          Get.back();
+          Get.back();
         },
+      ),
+    );
+  }
+
+  Future<PontuacaoEntity?> _buscarMelhorPontuacao() async {
+    Either<Failure, PontuacaoEntity> pontuacao =
+        await _pontuacaoUsecase.buscarMelhorPontuacoesByDificuldadeAndModo(
+      _dificuldade,
+      ModoJogoEnum.jogoRapido,
+    );
+
+    return pontuacao.fold(
+      (left) => null,
+      (pontuacao) => pontuacao,
+    );
+  }
+
+  Future<void> _salvarPontuacao(PontuacaoEntity? pontuacao) async {
+    if (pontuacao == null) {
+      await salvarMelhorPontuacao();
+      return;
+    }
+
+    if (pontuacao.melhorPontuacao < _pontuacao.value) {
+      await salvarMelhorPontuacao();
+    }
+  }
+
+  Future<void> salvarMelhorPontuacao() {
+    return _pontuacaoUsecase.salvarNovaMelhorPontuacao(
+      PontuacaoEntity(
+        melhorPontuacao: _pontuacao.value,
+        dificuldade: _dificuldade,
+        modoJogo: ModoJogoEnum.jogoRapido,
       ),
     );
   }

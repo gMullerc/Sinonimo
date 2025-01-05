@@ -4,10 +4,10 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter/services.dart';
 import 'package:sinonimo/extensions/string_extensions.dart';
 import 'package:sinonimo/sinonimos/common/data/models/palavra_principal_model.dart';
+import 'package:sinonimo/sinonimos/common/data/services/sinonimo_local_service.dart';
 import 'package:sinonimo/sinonimos/common/domain/entities/palavra_principal_entity.dart';
 import 'package:sinonimo/sinonimos/common/domain/entities/sinonimo_entity.dart';
 import 'package:sinonimo/sinonimos/common/failures/failure.dart';
-import 'package:sinonimo/sinonimos/jogo_rapido/data/services/sinonimo_local_service.dart';
 import 'package:uuid/uuid.dart';
 
 abstract class SinonimosRepository {

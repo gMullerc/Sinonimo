@@ -43,7 +43,7 @@ class PresetsJogoRapido {
           tempoTotal: 20,
           tempoPorAcerto: 12,
           tempoEmSegundoMaximoParaBonus: 12,
-          pontuacaoPerdidaPorErro: -120,
+          pontuacaoPerdidaPorErro: -100,
         );
       case DificuldadeEnum.dificil:
         return PresetsJogoRapido(
@@ -51,7 +51,7 @@ class PresetsJogoRapido {
           tempoTotal: 12,
           tempoPorAcerto: 07,
           tempoEmSegundoMaximoParaBonus: 06,
-          pontuacaoPerdidaPorErro: -175,
+          pontuacaoPerdidaPorErro: -125,
         );
     }
   }
