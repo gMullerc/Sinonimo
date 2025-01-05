@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sinonimo/sinonimos/common/components/texto_estilizado.dart';
 import 'package:sinonimo/theme/app_color.dart';
 
@@ -14,13 +15,11 @@ class _TutorialPageState extends State<TutorialPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent, // Sem cor de fundo
-        elevation: 0, // Remove a sombra da AppBar
+        backgroundColor: Colors.transparent,
+        elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back), // Ícone da seta para voltar
-          onPressed: () {
-            Navigator.of(context).pop(); // Ação para voltar à tela anterior
-          },
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Get.back(),
         ),
       ),
       body: SafeArea(

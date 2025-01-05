@@ -1,10 +1,8 @@
-enum DificuldadeEnum {
-  facil,
-  medio,
-  dificil;
+enum ModoJogoEnum {
+  jogoRapido;
 
-  static DificuldadeEnum fromString(String value) {
-    return DificuldadeEnum.values.firstWhere(
+  static ModoJogoEnum fromString(String value) {
+    return ModoJogoEnum.values.firstWhere(
       (e) => e.toString().split('.').last.toLowerCase() == value.toLowerCase(),
       orElse: () =>
           throw ArgumentError('Valor inválido para DificuldadeEnum: $value'),

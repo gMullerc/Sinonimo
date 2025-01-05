@@ -4,12 +4,12 @@ import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/informacao_final.
 import 'package:sinonimo/theme/app_color.dart';
 
 class DialogDerrota extends StatelessWidget {
-  final Function fecharModal;
+  final Function acaoFecharModal;
   final InformacaoFinal informacaoFinal;
 
   const DialogDerrota({
     super.key,
-    required this.fecharModal,
+    required this.acaoFecharModal,
     required this.informacaoFinal,
   });
 
@@ -33,7 +33,7 @@ class DialogDerrota extends StatelessWidget {
                     "Pontuação final: ${informacaoFinal.pontuacao}",
                   ),
                   ElevatedButton(
-                    onPressed: () => fecharModal(),
+                    onPressed: () => acaoFecharModal(),
                     child: const Text('Voltar para o menu'),
                   ),
                 ],

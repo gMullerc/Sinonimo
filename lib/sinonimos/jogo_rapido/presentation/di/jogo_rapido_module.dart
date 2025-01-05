@@ -1,9 +1,16 @@
 import 'package:get/get.dart';
+import 'package:sinonimo/sinonimos/common/data/repositories/pontuacao_repository.dart';
 import 'package:sinonimo/sinonimos/common/data/repositories/sinonimo_repository.dart';
+import 'package:sinonimo/sinonimos/common/data/services/pontuacao_local_service.dart';
+import 'package:sinonimo/sinonimos/common/data/services/sinonimo_local_service.dart';
 import 'package:sinonimo/sinonimos/common/enum/dificuldade_enum.dart';
-import 'package:sinonimo/sinonimos/jogo_rapido/data/services/sinonimo_local_service.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/presets_jogo_rapido.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/contador_usecase.dart';
+<<<<<<< Updated upstream
+=======
+import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/escolha_usecase.dart';
+import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/pontuacao_usecase.dart';
+>>>>>>> Stashed changes
 import 'package:sinonimo/sinonimos/jogo_rapido/presentation/controller/jogo_rapido_controller.dart';
 
 class JogoRapidoModule extends Bindings {
@@ -14,22 +21,58 @@ class JogoRapidoModule extends Bindings {
 
   @override
   void dependencies() {
+<<<<<<< Updated upstream
+=======
+    PresetsJogoRapido presetsJogoRapido = PresetsJogoRapido.fromDificuldade(
+      _dificuldade,
+    );
+
+>>>>>>> Stashed changes
     Get.lazyPut<SinonimosLocalService>(() => SinonimosLocalServiceImpl());
+
     Get.lazyPut<SinonimosRepository>(
       () => SinonimosRepositoryImpl(
         sinonimosLocalDao: Get.find(),
       ),
     );
+
+    Get.lazyPut<PontuacaoLocalService>(() => PontuacaoLocalServiceImpl());
+
+    Get.lazyPut<PontuacaoRepository>(
+      () => PontuacaoRepositoryImpl(pontuacaoLocalService: Get.find()),
+    );
+
+    Get.lazyPut<PontuacaoUsecase>(
+      () => PontuacaoUsecaseImpl(pontuacaoRepository: Get.find()),
+    );
+
     Get.lazyPut<ContadorUsecase>(
       () => ContadorUsecaseImpl(
         presetsJogoRapido: PresetsJogoRapido.fromDificuldade(_dificuldade),
       ),
     );
+<<<<<<< Updated upstream
+=======
+
+    Get.lazyPut<EscolhaUsecase>(
+      () => EscolhaUsecaseImpl(
+        presetsJogoRapido: presetsJogoRapido,
+        audioController: Get.find(),
+      ),
+    );
+
+>>>>>>> Stashed changes
     Get.lazyPut<JogoRapidoController>(
       () => JogoRapidoController(
         contadorUsecase: Get.find(),
         sinonimosRepository: Get.find(),
+<<<<<<< Updated upstream
         presetsJogoRapido: PresetsJogoRapido.fromDificuldade(_dificuldade),
+=======
+        pontuacaoUsecase: Get.find(),
+        presetsJogoRapido: presetsJogoRapido,
+        dificuldade: _dificuldade,
+>>>>>>> Stashed changes
       ),
     );
   }

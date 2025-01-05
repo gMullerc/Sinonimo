@@ -1,7 +1,7 @@
 name: sinonimo
 description: "A new Flutter project."
 publish_to: 'none'
-version: 1.0.0+1
+version: 0.0.2
 
 environment:
   sdk: ^3.5.4
@@ -16,6 +16,8 @@ dependencies:
   shared_preferences: ^2.3.4  
   google_fonts: ^6.2.1 
   uuid: ^4.5.1
+  just_audio: ^0.9.42
+  package_info_plus: ^8.1.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -29,6 +31,10 @@ flutter:
     - assets/sinonimos.csv
     - assets/dados.json
     - assets/fundo.png
+    - assets/musica_de_fundo.mp3
+    - assets/som_acerto.mp3
+    - assets/som_erro.mp3
+    - assets/uil_padlock.png
 
 
   # example:

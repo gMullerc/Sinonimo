@@ -4,9 +4,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:enableOnBackInvokedCallback="true"
-        android:label="sinonimo"
+        android:label="Sinônimos"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/sinonimos">
         <activity
             android:name=".MainActivity"
             android:exported="true"
