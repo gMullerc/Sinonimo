@@ -25,8 +25,8 @@ class PontuacaoModel extends PontuacaoEntity {
   Map<String, dynamic> toMap() {
     return {
       'melhorPontuacao': melhorPontuacao,
-      'dificuldade': dificuldade,
-      'modoJogo': modoJogo,
+      'dificuldade': dificuldade.name,
+      'modoJogo': modoJogo.name,
     };
   }
 

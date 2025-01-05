@@ -243,24 +243,23 @@ class JogoRapidoController extends GetxController {
   }
 
   Future<void> _salvarPontuacao(PontuacaoEntity? pontuacao) async {
-    if (pontuacao != null) {
-      if (pontuacao.melhorPontuacao < _pontuacao.value) {
-        await _pontuacaoUsecase.salvarNovaMelhorPontuacao(
-          PontuacaoEntity(
-            melhorPontuacao: _pontuacao.value,
-            dificuldade: _dificuldade,
-            modoJogo: ModoJogoEnum.jogoRapido,
-          ),
-        );
-      }
-    } else {
-      await _pontuacaoUsecase.salvarNovaMelhorPontuacao(
-        PontuacaoEntity(
-          melhorPontuacao: _pontuacao.value,
-          dificuldade: _dificuldade,
-          modoJogo: ModoJogoEnum.jogoRapido,
-        ),
-      );
+    if (pontuacao == null) {
+      await salvarMelhorPontuacao();
+      return;
     }
+
+    if (pontuacao.melhorPontuacao < _pontuacao.value) {
+      await salvarMelhorPontuacao();
+    }
+  }
+
+  Future<void> salvarMelhorPontuacao() {
+    return _pontuacaoUsecase.salvarNovaMelhorPontuacao(
+      PontuacaoEntity(
+        melhorPontuacao: _pontuacao.value,
+        dificuldade: _dificuldade,
+        modoJogo: ModoJogoEnum.jogoRapido,
+      ),
+    );
   }
 }

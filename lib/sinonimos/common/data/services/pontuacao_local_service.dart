@@ -24,13 +24,17 @@ class PontuacaoLocalServiceImpl extends PontuacaoLocalService {
   ) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    String? key = prefs
-        .getKeys()
-        .where((key) =>
-            key.contains("$_melhorPontuacaoKey${dificuldade}_$modoJogo"))
-        .firstOrNull;
+    String? key = prefs.getKeys().firstWhere(
+      (key) {
+        return key.contains(
+            "$_melhorPontuacaoKey${dificuldade.name}_${modoJogo.name}");
+      },
+      orElse: () => "",
+    );
 
-    String? json = prefs.getString(key ?? "");
+    final keyaa = "${key}";
+
+    String? json = prefs.getString(key);
 
     if (json != null) {
       return jsonDecode(json);
@@ -67,9 +71,11 @@ class PontuacaoLocalServiceImpl extends PontuacaoLocalService {
     Map<String, dynamic> mapPontuacao,
   ) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
+    final chave =
+        "$_melhorPontuacaoKey${mapPontuacao['dificuldade']}_${mapPontuacao['modoJogo']}";
 
     prefs.setString(
-      "$_melhorPontuacaoKey$mapPontuacao['dificuldade']_$mapPontuacao['modoJogo']",
+      chave, // Use a variável `chave` criada
       jsonEncode(mapPontuacao),
     );
   }
