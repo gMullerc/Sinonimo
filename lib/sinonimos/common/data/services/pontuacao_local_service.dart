@@ -76,7 +76,7 @@ class PontuacaoLocalServiceImpl extends PontuacaoLocalService {
         "$_melhorPontuacaoKey${mapPontuacao['dificuldade']}_${mapPontuacao['modoJogo']}";
 
     prefs.setString(
-      chave, // Use a variável `chave` criada
+      chave,
       jsonEncode(mapPontuacao),
     );
   }
