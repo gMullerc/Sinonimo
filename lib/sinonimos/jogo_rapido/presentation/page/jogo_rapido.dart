@@ -70,13 +70,8 @@ class _JogoRapidoState extends State<JogoRapido> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-<<<<<<< Updated upstream
-                      TextoEstilizado.h3(
-                        controller.palavraJogada?.palavra ?? "",
-=======
                       TextoEstilizado.h2(
                         _controller.palavraJogada?.palavra ?? "",
->>>>>>> Stashed changes
                       ),
                       const SizedBox(),
                     ],

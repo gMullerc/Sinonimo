@@ -49,13 +49,6 @@ class _MenuPageState extends State<MenuPage> {
                 child: Center(
                   child: Column(
                     children: [
-<<<<<<< Updated upstream
-                      CardSelecaoMenu(
-                        navegacao: () => Get.to(
-                          () => const JogoRapido(),
-                          binding: JogoRapidoModule(
-                              dificuldade: DificuldadeEnum.dificil),
-=======
                       Expanded(
                         flex: 2,
                         child: Row(
@@ -64,16 +57,8 @@ class _MenuPageState extends State<MenuPage> {
                           children: [
                             TextoEstilizado.h1("Sinônimos"),
                           ],
->>>>>>> Stashed changes
                         ),
                       ),
-<<<<<<< Updated upstream
-                      CardSelecaoMenu(
-                        navegacao: () => Get.to(
-                          () => const TutorialPage(),
-                        ),
-                        titulo: "Como jogar",
-=======
                       Expanded(
                         flex: 3,
                         child: Column(
@@ -102,7 +87,6 @@ class _MenuPageState extends State<MenuPage> {
                       ),
                       Expanded(
                         child: Text(_controller.version),
->>>>>>> Stashed changes
                       )
                     ],
                   ),

@@ -16,11 +16,8 @@ import 'package:sinonimo/sinonimos/common/failures/failure.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/informacao_final.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/presets_jogo_rapido.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/contador_usecase.dart';
-<<<<<<< Updated upstream
-=======
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/escolha_usecase.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/pontuacao_usecase.dart';
->>>>>>> Stashed changes
 
 typedef ValueNotifierListPalavras = ValueNotifier<List<PalavraPrincipalEntity>>;
 typedef ValueNotifierListSinonimo = ValueNotifier<List<SinonimoEntity>>;
@@ -31,28 +28,23 @@ class JogoRapidoController extends GetxController {
   late final SinonimosRepository _sinonimosRepository;
   late final PresetsJogoRapido _presetsJogoRapido;
   late final PontuacaoUsecase _pontuacaoUsecase;
+  late final EscolhaUsecase _escolhaUsecase;
   late final DificuldadeEnum _dificuldade;
 
   JogoRapidoController({
     required SinonimosRepository sinonimosRepository,
     required PresetsJogoRapido presetsJogoRapido,
     required ContadorUsecase contadorUsecase,
-<<<<<<< Updated upstream
-=======
     required EscolhaUsecase escolhaUsecase,
     required PontuacaoUsecase pontuacaoUsecase,
     required DificuldadeEnum dificuldade,
->>>>>>> Stashed changes
   }) {
     _sinonimosRepository = sinonimosRepository;
     _presetsJogoRapido = presetsJogoRapido;
     _contadorUsecase = contadorUsecase;
-<<<<<<< Updated upstream
-=======
     _escolhaUsecase = escolhaUsecase;
     _pontuacaoUsecase = pontuacaoUsecase;
     _dificuldade = dificuldade;
->>>>>>> Stashed changes
   }
 
   int tempoAdicionalPorAcerto = 0;
@@ -61,7 +53,7 @@ class JogoRapidoController extends GetxController {
   ValueNotifier<String?> error = ValueNotifier(null);
 
   final ValueNotifier<double> _progressoContador = ValueNotifier(1.0);
-  final ValueNotifier<int> _pontuacao = ValueNotifier(0);
+  final ValueNotifier<double> _pontuacao = ValueNotifier(0.0);
   final ValueNotifier<int> _tentativas = ValueNotifier(3);
   final ValueNotifierListPalavras _palavrasIncorretas = ValueNotifier([]);
   final ValueNotifierListPalavras _palavras = ValueNotifier([]);

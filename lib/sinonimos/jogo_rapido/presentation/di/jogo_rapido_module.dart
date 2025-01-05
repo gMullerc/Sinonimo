@@ -6,11 +6,8 @@ import 'package:sinonimo/sinonimos/common/data/services/sinonimo_local_service.d
 import 'package:sinonimo/sinonimos/common/enum/dificuldade_enum.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/presets_jogo_rapido.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/contador_usecase.dart';
-<<<<<<< Updated upstream
-=======
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/escolha_usecase.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/usecases/pontuacao_usecase.dart';
->>>>>>> Stashed changes
 import 'package:sinonimo/sinonimos/jogo_rapido/presentation/controller/jogo_rapido_controller.dart';
 
 class JogoRapidoModule extends Bindings {
@@ -21,13 +18,10 @@ class JogoRapidoModule extends Bindings {
 
   @override
   void dependencies() {
-<<<<<<< Updated upstream
-=======
     PresetsJogoRapido presetsJogoRapido = PresetsJogoRapido.fromDificuldade(
       _dificuldade,
     );
 
->>>>>>> Stashed changes
     Get.lazyPut<SinonimosLocalService>(() => SinonimosLocalServiceImpl());
 
     Get.lazyPut<SinonimosRepository>(
@@ -51,8 +45,6 @@ class JogoRapidoModule extends Bindings {
         presetsJogoRapido: PresetsJogoRapido.fromDificuldade(_dificuldade),
       ),
     );
-<<<<<<< Updated upstream
-=======
 
     Get.lazyPut<EscolhaUsecase>(
       () => EscolhaUsecaseImpl(
@@ -61,18 +53,14 @@ class JogoRapidoModule extends Bindings {
       ),
     );
 
->>>>>>> Stashed changes
     Get.lazyPut<JogoRapidoController>(
       () => JogoRapidoController(
         contadorUsecase: Get.find(),
         sinonimosRepository: Get.find(),
-<<<<<<< Updated upstream
-        presetsJogoRapido: PresetsJogoRapido.fromDificuldade(_dificuldade),
-=======
         pontuacaoUsecase: Get.find(),
         presetsJogoRapido: presetsJogoRapido,
         dificuldade: _dificuldade,
->>>>>>> Stashed changes
+        escolhaUsecase: Get.find(),
       ),
     );
   }
