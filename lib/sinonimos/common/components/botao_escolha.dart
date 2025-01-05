@@ -48,7 +48,7 @@ class BotaoResposta extends StatelessWidget {
             onPressed: () => selecionarResposta(),
             child: TextoEstilizado.h3(
               fontWeight: FontWeight.w500,
-              sinonimo?.nome.capitalize() ?? "",
+              sinonimo?.nome.trim().capitalize() ?? "",
             ),
           ),
         ),

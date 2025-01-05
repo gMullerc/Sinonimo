@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/presets_jogo_rapido.dart';
 
 abstract class ContadorUsecase {
@@ -23,11 +22,15 @@ abstract class ContadorUsecase {
   set setTempoRestante(int tempoRestante) => _tempoRestante = tempoRestante;
 
   void iniciarContador({
-    required ValueNotifier<double> progressoContador,
+    required Function(double novoProgresso) alterarProgresso,
     required Function dialogDerrota,
   });
 
-  void resetarTimer({required ValueNotifier<double> progressoContador});
+  void resetarTimer({
+    required Function(double novoProgresso) alterarProgresso,
+  });
+
+  void adicionarTempoPorVelocidadeClicada();
 }
 
 class ContadorUsecaseImpl extends ContadorUsecase {
@@ -40,7 +43,7 @@ class ContadorUsecaseImpl extends ContadorUsecase {
   }
   @override
   void iniciarContador({
-    required ValueNotifier<double> progressoContador,
+    required Function(double novoProgresso) alterarProgresso,
     required Function dialogDerrota,
   }) {
     setUltimaContagem = DateTime.now();
@@ -50,26 +53,28 @@ class ContadorUsecaseImpl extends ContadorUsecase {
       intervalo,
       (timer) => _realizarContagemDoTempo(
         timer,
-        progressoContador: progressoContador,
+        alterarProgresso: alterarProgresso,
         dialogDerrota: dialogDerrota,
       ),
     );
   }
 
   @override
-  void resetarTimer({required ValueNotifier<double> progressoContador}) {
+  void resetarTimer({
+    required Function(double novoProgresso) alterarProgresso,
+  }) {
     if (_timer != null) {
       _timer?.cancel();
       _timer = null;
     }
     _jogoIniciado = false;
     _tempoRestante = 0;
-    progressoContador.value = 1.0;
+    alterarProgresso(1.0);
   }
 
   void _realizarContagemDoTempo(
     Timer timer, {
-    required ValueNotifier<double> progressoContador,
+    required Function(double novoProgresso) alterarProgresso,
     required Function dialogDerrota,
   }) {
     final DateTime dateAtual = DateTime.now();
@@ -81,12 +86,20 @@ class ContadorUsecaseImpl extends ContadorUsecase {
 
     setTempoRestante = (tempoRestante! - tempoDecorridoEmMilisegundos);
     if (tempoRestante! <= 0) {
-      progressoContador.value = 0.0;
+      alterarProgresso(0.0);
       timer.cancel();
       dialogDerrota();
     } else {
-      progressoContador.value =
-          tempoRestante! / (_presetsJogoRapido.tempoTotal * 1000);
+      alterarProgresso(tempoRestante! / (_presetsJogoRapido.tempoTotal * 1000));
+    }
+  }
+
+  @override
+  void adicionarTempoPorVelocidadeClicada() {
+    if (jogoIniciado) {
+      setTempoRestante =
+          (tempoRestante! + (_presetsJogoRapido.tempoPorAcerto * 1000))
+              .clamp(0, _presetsJogoRapido.tempoTotal * 1000);
     }
   }
 }
