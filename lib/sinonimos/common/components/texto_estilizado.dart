@@ -76,7 +76,7 @@ class TextoEstilizado extends StatelessWidget {
     return TextoEstilizado._(
       texto,
       GoogleFonts.playpenSansTextTheme().bodyLarge!.copyWith(
-            fontSize: 14,
+            fontSize: 12,
             fontWeight: fontWeight,
             color: cor,
           ),

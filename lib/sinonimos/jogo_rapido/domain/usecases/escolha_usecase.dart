@@ -1,3 +1,4 @@
+import 'package:sinonimo/sinonimos/common/presentation/controller/audio_controller.dart';
 import 'package:sinonimo/sinonimos/jogo_rapido/domain/entities/presets_jogo_rapido.dart';
 
 abstract class EscolhaUsecase {
@@ -22,9 +23,14 @@ abstract class EscolhaUsecase {
 }
 
 class EscolhaUsecaseImpl extends EscolhaUsecase {
+  late final AudioController _audioController;
   late final PresetsJogoRapido _presetsJogoRapido;
 
-  EscolhaUsecaseImpl({required PresetsJogoRapido presetsJogoRapido}) {
+  EscolhaUsecaseImpl({
+    required PresetsJogoRapido presetsJogoRapido,
+    required AudioController audioController,
+  }) {
+    _audioController = audioController;
     _presetsJogoRapido = presetsJogoRapido;
   }
 
@@ -32,7 +38,7 @@ class EscolhaUsecaseImpl extends EscolhaUsecase {
   void acaoPalavraCorretaSelecionada({
     required Function(double value) alterarPontuacao,
     required Function adicionarTempoPorVelocidadeClicada,
-  }) {
+  }) async {
     double pontuacaoPadrao = _presetsJogoRapido.pontuacaoPorAcerto;
 
     final int tempoEmSegundoMaximoParaBonus =
@@ -65,15 +71,18 @@ class EscolhaUsecaseImpl extends EscolhaUsecase {
 
     alterarPontuacao(pontuacaoPadrao);
     adicionarTempoPorVelocidadeClicada();
+    await _audioController.playSomAcerto();
   }
 
   @override
   void acaoPalavraIncorretaSelecionada({
     required Function(double value) atualizarPontuacao,
     required Function atualizarTentativas,
-  }) {
+  }) async {
     atualizarPontuacao(_presetsJogoRapido.pontuacaoPerdidaPorErro);
     atualizarTentativas();
+
+    await _audioController.playSomErro();
   }
 
   @override
